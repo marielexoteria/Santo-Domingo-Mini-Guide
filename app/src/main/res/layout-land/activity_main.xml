@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- cuando acabe de programar debo buscarle la vuelta a lo de
+la posición del texto y el botón en landscape -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/app_background_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/santo_domingo_bg" />
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_title"
+        android:text="@string/app_title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/title_text_size" />
+
+    <TextView
+        android:id="@+id/app_subheading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_title"
+        android:layout_marginLeft="@dimen/margin_horizontal_text"
+        android:text="@string/app_subheading1"
+        android:textColor="#fff"
+        android:textSize="@dimen/title_subheading" />
+
+    <TextView
+        android:id="@+id/app_subheading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_subheading1"
+        android:layout_marginLeft="@dimen/margin_horizontal_text"
+        android:text="@string/app_subheading2"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/title_subheading" />
+
+    <TextView
+        android:id="@+id/word_italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_subheading1"
+        android:layout_toRightOf="@id/app_subheading2"
+        android:text="@string/demonym"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/title_subheading"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/guide_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_subheading2"
+        android:layout_marginLeft="@dimen/margin_horizontal_guide_me_btn"
+        android:layout_marginTop="@dimen/margin_vertical_guide_me_btn"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/padding_button"
+        android:text="@string/guide_me_button"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

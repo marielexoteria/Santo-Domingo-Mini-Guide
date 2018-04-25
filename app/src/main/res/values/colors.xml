@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main colors on the app -->
+    <color name="colorPrimary">#003470</color>
+    <color name="colorPrimaryDark">#003470</color>
+    <!-- <color name="colorAccent">#D0BD99</color> golden'ish -->
+    <color name="colorAccent">#A6BE00</color>
+
+    <!-- Color used in the fragment, simulating the blue sky on top of the picture
+    on activity_main -->
+    <color name="background_color">#005797</color>
+
+
+</resources>
