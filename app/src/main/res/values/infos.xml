@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Info related to Sights > Alcázar de Colón -->
+    <string name="name">Alcázar de Colón</string>
+    <string name="opening_hours">Tuesday to Sunday 9:00 am to 5:00 pm</string>
+    <string name="description">The oldest Viceregal residence in the Americas, built in Gothic and
+        Renaissance style around 1512 for Christopher Columbus\’ son Diego and his wife,
+        Maria de Toledo. The expeditions and conquest of the Americas were planned from here.</string>
+    <string name="address_text">Plaza de España, Calle Las Damas</string>
+    <string name="phone_number">+1 809-687-5361</string>
+    <string name="website">www.godominicanrepublic.com</string>
+    <string name="coordinates">0,0</string>
+    <string name="address_for_map">Alcázar de Colón, Santo+Domingo, Dominican+Republic</string>
+
+    <!-- Info related to Sights > NAME GOES HERE -->
+
+
+    <!-- Info related to Restaurants > NAME GOES HERE -->
+
+
+    <!-- Info related to Hotels > NAME GOES HERE -->
+
+    <!-- Info related to Events > NAME GOES HERE -->
+
+
+</resources>

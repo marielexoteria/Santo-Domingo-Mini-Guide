@@ -13,7 +13,7 @@
     <!-- Beginning of strings used in activity_tourist_guide.xml -->
 
     <!-- Footer section -->
-    <string name="footer_part_1">Made with a lot of\u0020</string>
+    <string name="footer_part_1">Made with \u0020</string>
     <string name="footer_part_2">\u0020and\u0020</string>
     <!-- End of strings used in activity_tourist_guide.xml -->
 

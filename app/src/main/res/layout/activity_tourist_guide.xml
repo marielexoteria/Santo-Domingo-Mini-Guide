@@ -9,12 +9,25 @@
     android:orientation="vertical"
     tools:context=".TouristGuide">
 
+    <ImageView
+        android:id="@+id/map_sights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:src="@drawable/map_sights" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_on_maps"
+        android:text="View on maps"/>
+
     <TextView
         android:id="@+id/content_goes_here"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
         android:text=""
+        android:layout_weight="1"
         android:textAllCaps="true"
         android:textSize="@dimen/title_text_size"
         android:gravity="center"
