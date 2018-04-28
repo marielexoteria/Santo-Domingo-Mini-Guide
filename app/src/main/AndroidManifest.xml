@@ -17,6 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.android.sdminiguide.TouristGuide"></activity>
+        <activity android:name=".SightsActivity"></activity>
+        <activity android:name=".RestaurantsActivity"></activity>
+        <activity android:name=".HotelsActivity"></activity>
+        <activity android:name=".EventsActivity"></activity>
     </application>
 
 </manifest>

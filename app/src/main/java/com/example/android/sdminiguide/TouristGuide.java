@@ -8,20 +8,52 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class TouristGuide extends AppCompatActivity implements View.OnClickListener {
+public class TouristGuide extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tourist_guide);
 
-        //Temp text
-        TextView contentGoesHere = (TextView) findViewById(R.id.content_goes_here);
-        contentGoesHere.setText("Content coming soon!");
+        //Initializing variables
+        Button sights = (Button) findViewById(R.id.sights);
+        Button restaurants = (Button) findViewById(R.id.restaurants);
+        Button hotels = (Button) findViewById(R.id.hotels);
+        Button events = (Button) findViewById(R.id.events);
 
-        //Trying out opening G Maps with an intent - initializing button view
-        Button viewOnMaps = (Button) findViewById(R.id.view_on_maps);
-        viewOnMaps.setOnClickListener(this);
+        //Open the activities based on which button the user clicked
+        sights.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent sightsActivity = new Intent(getApplicationContext(), SightsActivity.class);
+                startActivity(sightsActivity);
+            }
+        });
+
+        restaurants.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent restaurantsActivity = new Intent(getApplicationContext(), RestaurantsActivity.class);
+                startActivity(restaurantsActivity);
+            }
+        });
+
+        hotels.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent hotelsActivity = new Intent(getApplicationContext(), HotelsActivity.class);
+                startActivity(hotelsActivity);
+            }
+        });
+
+        events.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent eventsActivity = new Intent(getApplicationContext(), EventsActivity.class);
+                startActivity(eventsActivity);
+            }
+        });
+
 
         // *** Beginning of Footer section ***
 
@@ -45,27 +77,9 @@ public class TouristGuide extends AppCompatActivity implements View.OnClickListe
         // *** End of Footer section ***
     }
 
-    //Trying out opening G Maps with an intent
-    //PONER LA INFO EN OTRO ARCHIVO SI PUEDO!
-    //From https://developers.google.com/maps/documentation/urls/android-intents (intent requests +
-    // location search)
-    public void onClick(View view) {
-        Uri gmmIntentUri = Uri.parse("geo:0,0?q=Alcázar de Colón, Santo+Domingo, Dominican+Republic");
-        //The official documentation says that coords are not necessary when passing an address,
-        //but just to make sure that the location pin will be at the right place I could do
-        //this geo:18.477567,-69.882681?q=Alcázar de Colón, Santo+Domingo, Dominican+Republic
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-        mapIntent.setPackage("com.google.android.apps.maps");
-        if (mapIntent.resolveActivity(getPackageManager()) != null) {
-            startActivity(mapIntent);
-        }
-
-
-    }
-
     /*
      * Function that returns an emoji as a string to display it in the footer
-     * without needing to use a Drawable resource
+     * without needing to use a Drawable resource (found on the link above)
      * @param unicode     the int code of the emoji defined in the variables unicodeEmojiHeart
      * & unicodeEmojiCake
      */

@@ -9,6 +9,11 @@
     <string name="guide_me_button">Guide me!</string>
     <!-- End of strings used in activity_main.xml -->
 
+    <!-- Beginning of strings used in tourist_guide_list_item.xml -->
+    <string name="address_label">Address:\u0020</string>
+    <string name="opening_hours">Opening hours:\u0020</string>
+    <!-- End of strings used in tourist_guide_list_item.xml -->
+
 
     <!-- Beginning of strings used in activity_tourist_guide.xml -->
 

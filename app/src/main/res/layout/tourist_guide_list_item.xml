@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tourist_guide_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_general">
+
+    <!-- cambiar los nombres de los IDs y mover labels a
+     strings.xml o infos.xml -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_location_name_text_view"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_fragments_screen"
+        tools:text="1) Alcázar"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address_label"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_address_text_view"
+            android:textColor="@android:color/black"
+            tools:text="Plaza España"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opening_hours"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_opening_hours_text_view"
+            android:textColor="@android:color/black"
+            tools:text="Tuesday to Sunday 9:00 am to 5:00 pm"/>
+
+    </LinearLayout>
+
+</LinearLayout>

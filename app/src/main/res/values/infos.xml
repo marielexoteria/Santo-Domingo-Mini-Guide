@@ -1,26 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Info related to Sights > Alcázar de Colón -->
-    <string name="name">Alcázar de Colón</string>
-    <string name="opening_hours">Tuesday to Sunday 9:00 am to 5:00 pm</string>
-    <string name="description">The oldest Viceregal residence in the Americas, built in Gothic and
+    <string name="sight1_name">Alcázar de Colón</string>
+    <string name="sight1_address_text">Plaza de España, Calle Las Damas</string>
+    <string name="sight1_opening_hours">Tuesday to Sunday 9:00 am to 5:00 pm</string>
+    <string name="sight1_description">The oldest Viceregal residence in the Americas, built in Gothic and
         Renaissance style around 1512 for Christopher Columbus\’ son Diego and his wife,
         Maria de Toledo. The expeditions and conquest of the Americas were planned from here.</string>
-    <string name="address_text">Plaza de España, Calle Las Damas</string>
-    <string name="phone_number">+1 809-687-5361</string>
-    <string name="website">www.godominicanrepublic.com</string>
-    <string name="coordinates">0,0</string>
-    <string name="address_for_map">Alcázar de Colón, Santo+Domingo, Dominican+Republic</string>
+    <string name="sight1_phone_number">+1 809&#8211;687&#8211;5361</string>
+    <string name="sight1_website">www.godominicanrepublic.com</string>
+    <string name="sight1_coordinates">0,0</string>
+    <string name="sight1_address_for_map">Alcázar de Colón, Santo+Domingo, Dominican+Republic</string>
 
-    <!-- Info related to Sights > NAME GOES HERE -->
+    <!-- Info related to Sights > Monasterio de San Francisco -->
+    <string name="sight2_name">Monasterio de San Francisco</string>
+    <string name="sight2_address_text">Calle Juan Isidro Pérez</string>
+    <string name="sight2_opening_hours">Check on location</string>
+    <string name="sight2_description">The first monastery of the New World was built around 1509 with the
+        arrival of the Franciscan fathers. The building was used as a mental asylum from the 1880s until
+        the 1930s. Currently, the ruins are used for social and cultural events.</string>
+    <string name="sight2_phone_number">N/A</string>
+    <string name="sight2_website">www.godominicanrepublic.com</string>
+    <string name="sight2_coordinates">0,0</string>
+    <string name="sight2_address_for_map">Monasterio de San Francisco, Calle Juan Isidro Pérez, Santo+Domingo,
+        Dominican+Republic</string>
+
+    <!-- Info related to Sights > Catedral Primada de América -->
+    <string name="sight3_name">Catedral Primada de América</string>
+    <string name="sight3_address_text">Calle Isabel La Católica</string>
+    <string name="sight3_opening_hours">Check on location</string>
+    <string name="sight3_description">500 years old and still standing in its amazing grace.
+        Tourists love the ornate details of the first cathedral in the Americas. Well cared for and
+        illuminated, the church has an impressive Gothic ceiling and colonial period oil paintings.</string>
+    <string name="sight3_phone_number">+1 809&#8211;682&#8211;3848</string>
+    <string name="sight3_website">www.godominicanrepublic.com</string>
+    <string name="sight3_coordinates">0,0</string>
+    <string name="sight3_address_for_map">Catedral Primada de América, Calle Isabel La Católica,
+        Santo+Domingo, Dominican+Republic</string>
+
+    <!-- Info related to Sights > Larimar Museum -->
+    <string name="sight4_name">Larimar Museum</string>
+    <string name="sight4_address_text">Calle Isabel La Católica #54</string>
+    <string name="sight4_opening_hours">Weekdays 9:00 am to 6:00 pm, Saturday 9:00 am to 1:00 pm</string>
+    <string name="sight4_description">Small museum showcasing specimens, data and scientific details about
+        larimar, a rare, blue pectolite that can only be found in the Dominican Republic.</string>
+    <string name="sight4_phone_number">+1 809&#8211;682&#8211;3309</string>
+    <string name="sight4_website">www.larimarmuseum.com</string>
+    <string name="sight4_coordinates">0,0</string>
+    <string name="sight4_address_for_map">Larimar Museum, Zona+Colonial, Dominican+Republic</string>
+
+    <!-- Info related to Sights > Fortaleza Ozama -->
+    <string name="sight5_name">Fortaleza Ozama</string>
+    <string name="sight5_address_text">Calle Las Damas #1</string>
+    <string name="sight5_opening_hours">Every day 8:00 am to 5:00 pm</string>
+    <string name="sight5_description">First permanent military structure built by the Spaniards in the
+        Americas in early 16th century, at the beginning of the Spanish colonization. In its center,
+        a 5-floor tower and a lookout platform with impressive views of the Ozama River.</string>
+    <string name="sight5_phone_number">+1 809&#8211;688&#8211;1553</string>
+    <string name="sight5_website">www.godominicanrepublic.com</string>
+    <string name="sight5_coordinates">0,0</string>
+    <string name="sight5_address_for_map">Fortaleza Ozama, Calle Las Damas, Santo+Domingo, Dominican+Republic</string>
 
 
-    <!-- Info related to Restaurants > NAME GOES HERE -->
+    <!-- Info related to Restaurants > D'Luis Parrillada -->
+    <string name="restaurant1_name">D\'Luis Parrillada</string>
+    <string name="restaurant1_address_text">Av. George Washington #25 (Paseo Pte. Billini), Ciudad Nueva</string>
+    <string name="restaurant1_opening_hours">Every day 8:00 am to 1:00 am</string>
+    <string name="restaurant1_description">Caribbean and Latin American food in a casual ambiance with
+        views to the Caribbean Sea. Their specialty is grilled meat. The mofongo is highly recommended.</string>
+    <string name="restaurant1_phone_number">+1 809&#8211;686&#8211;2940</string>
+    <string name="restaurant1_website">www.menu.com.do/#!/n/dluis_parrillada</string>
+    <string name="restaurant1_coordinates">0,0</string>
+    <string name="restaurant1_address_for_map">D\'Luis Parrillada, Santo+Domingo, Dominican+Republic</string>
+
+    <!-- Info related to Restaurants > Barra Payán -->
+    <string name="restaurant2_name">Barra Payán</string>
+    <string name="restaurant2_address_text">Av. 30 de marzo #140</string>
+    <string name="restaurant2_opening_hours">24-hour service</string>
+    <string name="restaurant2_description">Sandwich shop very popular with the locals for over 40 years.
+        They offer a variety of sandwiches and natural juice, all made on order.</string>
+    <string name="restaurant2_phone_number">+1 809&#8211;689&#8211;6654</string>
+    <string name="restaurant2_website">www.grupobarrapayan.com</string>
+    <string name="restaurant2_coordinates">0,0</string>
+    <string name="restaurant2_address_for_map">Barra Payán, Avenida 30 de marzo, Santo+Domingo,
+        Dominican+Republic</string>
+
+    <!-- Info related to Restaurants > Mesón D'Bari -->
+    <string name="restaurant3_name">Mesón D\'Bari</string>
+    <string name="restaurant3_address_text">Calle Hostos #302</string>
+    <string name="restaurant3_opening_hours">Every day 12:00 pm to 12:00 am</string>
+    <string name="restaurant3_description">Dominican cuisine that features "grandma\'s
+        recipes" in an eclectic setting.</string>
+    <string name="restaurant3_phone_number">+1 809&#8211;687&#8211;4091</string>
+    <string name="restaurant3_website">https://www.menu.com.do/#!/n/mesn_d_bari</string>
+    <string name="restaurant3_coordinates">0,0</string>
+    <string name="restaurant3_address_for_map">Mesón D\'Bari, Santo+Domingo, Dominican+Republic</string>
 
 
-    <!-- Info related to Hotels > NAME GOES HERE -->
+    <!-- Info related to Hotels > Hodelpa Nicolás de Ovando -->
+    <string name="hotel1_name">Hodelpa Nicolás de Ovando</string>
+    <string name="hotel1_address_text">Calle Las Damas</string>
+    <string name="hotel1_opening_hours">N/A</string>
+    <string name="hotel1_description">Located in the heart of the Colonial City, the 3 houses and their
+        gorgeous patios include the original home of the town’s founder, Governor Nicolás de Ovando.
+        On the famous street “Las Damas”, the first paved road of the New World.</string>
+    <string name="hotel1_phone_number">+1 809&#8211;685&#8211;9955</string>
+    <string name="hotel1_website">www.hodelpanicolasdeovando.com</string>
+    <string name="hotel1_coordinates">0,0</string>
+    <string name="hotel1_address_for_map">Hodelpa Nicolás de Ovando, Calle Las Damas,
+        Santo+Domingo, Dominican+Republic</string>
 
-    <!-- Info related to Events > NAME GOES HERE -->
+    <!-- Info related to Hotels > Casa Naemie -->
+    <string name="hotel2_name">Casa Naemie</string>
+    <string name="hotel2_address_text">Calle Isabel La Católica #11</string>
+    <string name="hotel2_opening_hours">N/A</string>
+    <string name="hotel2_description">Small hotel situated in the oldest part of the Colonial City,
+        just minutes away from the Cathedral, El Conde street and other interesting places to visit.</string>
+    <string name="hotel2_phone_number">+1 809&#8211;689&#2215;9955</string>
+    <string name="hotel2_website">www.casanaemie.com</string>
+    <string name="hotel2_coordinates">0,0</string>
+    <string name="hotel2_address_for_map">Casa Naemie, Calle Isabel La Católica
+        , Santo+Domingo, Dominican+Republic</string>
+
+    <!-- Info related to Hotels > Hostal Tierra Plana-->
+    <string name="hotel3_name">Hostal Tierra Plana</string>
+    <string name="hotel3_address_text">Calle Hostos</string>
+    <string name="hotel3_opening_hours">N/A</string>
+    <string name="hotel3_description">Hostel situated in the heart of the Colonial City, close to many
+        of the attractions and places to eat. Their terrace overlooks the Monasterio de San Francisco,
+        which hosts Bonyé (a son street party) every Sunday.</string>
+    <string name="hotel3_phone_number">+1 809&#8211;686&#2215;0120</string>
+    <string name="hotel3_website">www.hostaltierraplana.com</string>
+    <string name="hotel3_coordinates">0,0</string>
+    <string name="hotel3_address_for_map">Hostal Tierra Plana, Calle Hostos,
+        Santo+Domingo, Dominican+Republic</string>
+
+
+    <!-- Info related to Events > Bonyé -->
+    <string name="event1_name">Bonyé</string>
+    <string name="event1_address_text">Calle Emiliano Tejera</string>
+    <string name="event1_opening_hours">Sundays 5:00 pm to 10:00 pm</string>
+    <string name="event1_description">Free musical performances of merengue, son, and other Latin rhythms.</string>
+    <string name="event1_phone_number">N/A</string>
+    <string name="event1_website">https://www.facebook.com/GrupoBonye</string>
+    <string name="event1_coordinates">0,0</string>
+    <string name="event1_address_for_map">Grupo Bonye, Calle Emiliano Tejera, Santo+Domingo,
+        Dominican+Republic</string>
 
 
 </resources>

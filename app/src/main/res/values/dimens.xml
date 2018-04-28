@@ -9,14 +9,18 @@
     <!-- Padding -->
     <dimen name="padding_title">16dp</dimen>
     <dimen name="padding_button">16dp</dimen>
+    <dimen name="padding_general">16dp</dimen>
 
     <!-- Margins -->
     <dimen name="margin_horizontal_text">16dp</dimen>
     <dimen name="margin_vertical_text">16dp</dimen> <!-- also used in activity_tourist_guide (footer) -->
+    <dimen name="margin_general">16dp</dimen>
 
     <dimen name="margin_horizontal_guide_me_btn">20dp</dimen>
     <dimen name="margin_vertical_guide_me_btn">20dp</dimen>
 
     <!-- End of dimensions used in activity_main.xml -->
+
+    <dimen name="text_size_fragments_screen">15sp</dimen>
 
 </resources>

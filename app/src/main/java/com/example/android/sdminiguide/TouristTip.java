@@ -1,28 +1,40 @@
 package com.example.android.sdminiguide;
 
-public class TouristTips {
+/*
+ * {@Link TouristTips} represents a tourist tip to show as a sight, a restaurant, a hotel or an event.
+ * The info about the tourist tip is split between 2 screens
+ * The fragments screen will only list the name of the place, the address and opening hours
+ * together with a thumbnail.
+ * The full info is shown in the details screen.
+ */
+
+public class TouristTip {
 
     /* The following 3 items are shown on the fragments screen */
 
     //The thumbnail of the tourist tip
-    private int xThumbnail;
+    //private int xThumbnail;
 
-    //The name of the tourist tip
-    private int xName;
+    //The name of the tourist tip used in the format "1) Tourist tip"
+    //Because it will be shown in a map with a number instead of a location pin
+    private String xNameOnListItem;
+
+    //The address of the tourist tip
+    private String xAddress;
 
     //The opening hours of the tourist tip
-    private int xOpeningHours;
+    private String xOpeningHours;
 
     /* The following items are shown on the detail screens, together with the name and opening hours */
 
+    //The name of the tourist tip
+    //private int xName;
+
     //The main photo of the tourist tip
-    private int xPhoto;
+    /*private int xMainPhoto;
 
     //The description of the tourist tip
     private int xDescription;
-
-    //The address of the tourist tip
-    private int xAddress;
 
     //The phone number of the tourist tip
     private int xPhoneNumber;
@@ -35,43 +47,57 @@ public class TouristTips {
 
     //The coordinates of the tourist tip, to be used to open the user's Map app to
     //see the location of the tourist tip
-    private int xCoordinates;
+    private int xCoordinates;*/
 
     //Creating the constructor
-    public TouristTips (int thumbnail, int name, int openingHours, int photo, int description, int address,
-        int phoneNumber, int website, int map, int coordinates) {
+    public TouristTip(String nameOnListItem, String address, String openingHours) {
         //The variables take the value of the arguments
-        xThumbnail = thumbnail;
-        xName = name;
-        xOpeningHours = openingHours;
-        xPhoto = photo;
-        xDescription = description;
+       //xThumbnail = thumbnail;
+        xNameOnListItem = nameOnListItem;
         xAddress = address;
+        xOpeningHours = openingHours;
+        /*public TouristTips (int thumbnail, int locationName, int openingHours, int name,
+        int mainPhoto, int description, int address, int phoneNumber, int website, int map,
+        int coordinates) {
+        xName = name;
+        xMainPhoto = photo;
+        xDescription = description;
+
         xPhoneNumber = phoneNumber;
         xWebsite = website;
         xMap = map;
-        xCoordinates = coordinates;
+        xCoordinates = coordinates;*/
 
     }
 
     //Get the thumbnail of the tourist tip
-    public int getThumbnailID() {
+    /*public int getThumbnailID() {
         return xThumbnail;
+    }*/
+
+    //Get the name of the tourist tip used in the format "1) Tourist tip"
+    public String getNameOnListItem() {
+        return xNameOnListItem;
     }
 
-    //Get the name of the tourist tip
-    public int getNameID() {
-        return xName;
+    //Get the address of the tourist tip
+    public String getAddress() {
+        return xAddress;
     }
 
     //Get the opening hours of the tourist tip
-    public int getOpeningHoursID() {
+    public String getOpeningHours() {
         return xOpeningHours;
     }
 
     //Get the main photo of the tourist tip
-    public int getPhotoID() {
-        return xPhoto;
+    /*public int getMainPhotoID() {
+        return xMainPhoto;
+    }
+
+    //Get the name of the tourist tip
+    /*public int getName() {
+        return xName;
     }
 
     //Get the description of the tourist tip
@@ -79,10 +105,6 @@ public class TouristTips {
         return xDescription;
     }
 
-    //Get the address of the tourist tip
-    public int getAddressID() {
-        return xAddress;
-    }
 
     //Get the phone number of the tourist tip
     public int getPhoneNumberID() {
@@ -102,6 +124,6 @@ public class TouristTips {
     //Get the coordinates of the tourist tip
     public int getCoordinatesID() {
         return xCoordinates;
-    }
+    }*/
 
 }
