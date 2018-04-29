@@ -1,22 +1,33 @@
 package com.example.android.sdminiguide;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class SightsActivity extends AppCompatActivity {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class SightsFragment extends Fragment {
+
+    public SightsFragment() {
+        // Required empty public constructor
+    }
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.tourist_tips);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.tourist_tips, container, false);
 
         //Setting the map of tourist_tips programmatically
-        ImageView mapOfSights = (ImageView) findViewById(R.id.location_map);
+        ImageView mapOfSights = (ImageView) rootView.findViewById(R.id.location_map);
         mapOfSights.setImageResource(R.drawable.map_sights);
 
         //Creating the ArrayList and using it to display content on tourist_tips.xmlps.xml
@@ -35,9 +46,9 @@ public class SightsActivity extends AppCompatActivity {
                 "Address: Calle Las Damas #1", "Fortaleza Ozama", "Hours: 746"));
 
         //Creating an ArrayAdapter and a ListView to recycle the views
-        TouristTipAdapter sightsItemsAdapter = new TouristTipAdapter(this, sightsList);
+        TouristTipAdapter sightsItemsAdapter = new TouristTipAdapter(getActivity(), sightsList);
 
-        ListView sightsListView = (ListView) findViewById(R.id.tourist_tips_list_view);
+        ListView sightsListView = (ListView) rootView.findViewById(R.id.tourist_tips_list_view);
 
         //Populating the ListView
         sightsListView.setAdapter(sightsItemsAdapter);
@@ -47,7 +58,7 @@ public class SightsActivity extends AppCompatActivity {
         // *** Beginning of Footer section ***
 
         //Variables needed to build the footer section of the app
-        TextView footer = (TextView) findViewById(R.id.footer);
+        TextView footer = (TextView) rootView.findViewById(R.id.footer);
 
         /*Variables for the emojis I chose to use
          * Unicodes from http://www.unicode.org/emoji/charts/full-emoji-list.html
@@ -64,6 +75,7 @@ public class SightsActivity extends AppCompatActivity {
                 + getString(R.string.footer_part_2) + getEmojiByUnicode(unicodeEmojiCake));
 
         // *** End of Footer section ***
+        return rootView;
     }
 
     /*
@@ -76,4 +88,8 @@ public class SightsActivity extends AppCompatActivity {
     private String getEmojiByUnicode(int unicode){
         return new String(Character.toChars(unicode));
     }
+
+
+
+
 }

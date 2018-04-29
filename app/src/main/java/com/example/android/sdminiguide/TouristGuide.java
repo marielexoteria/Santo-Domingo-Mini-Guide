@@ -1,11 +1,9 @@
 package com.example.android.sdminiguide;
 
-import android.content.Intent;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 public class TouristGuide extends AppCompatActivity {
@@ -15,44 +13,24 @@ public class TouristGuide extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tourist_guide);
 
-        //Initializing variables
-        Button sights = (Button) findViewById(R.id.sights);
-        Button restaurants = (Button) findViewById(R.id.restaurants);
-        Button hotels = (Button) findViewById(R.id.hotels);
-        Button events = (Button) findViewById(R.id.events);
+        // Find the view pager that will allow the user to swipe between fragments
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 
-        //Open the activities based on which button the user clicked
-        sights.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent sightsActivity = new Intent(getApplicationContext(), SightsActivity.class);
-                startActivity(sightsActivity);
-            }
-        });
+        // Create an adapter that knows which fragment should be shown on each page
+        TouristTipsCategoryAdapter adapter = new TouristTipsCategoryAdapter(this, getSupportFragmentManager());
 
-        restaurants.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent restaurantsActivity = new Intent(getApplicationContext(), RestaurantsActivity.class);
-                startActivity(restaurantsActivity);
-            }
-        });
+        // Set the adapter onto the view pager
+        viewPager.setAdapter(adapter);
 
-        hotels.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent hotelsActivity = new Intent(getApplicationContext(), HotelsActivity.class);
-                startActivity(hotelsActivity);
-            }
-        });
+        // Find the tab layout that shows the tabs
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
 
-        events.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent eventsActivity = new Intent(getApplicationContext(), EventsActivity.class);
-                startActivity(eventsActivity);
-            }
-        });
+        // Connect the tab layout with the view pager. This will
+        //   1. Update the tab layout when the view pager is swiped
+        //   2. Update the view pager when a tab is selected
+        //   3. Set the tab layout's tab names with the view pager's adapter's titles
+        //      by calling onPageTitle()
+        tabLayout.setupWithViewPager(viewPager);
 
 
         // *** Beginning of Footer section ***

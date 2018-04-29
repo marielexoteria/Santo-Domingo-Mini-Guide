@@ -1,21 +1,35 @@
 package com.example.android.sdminiguide;
 
+
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class RestaurantsActivity extends AppCompatActivity {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class EateriesFragment extends Fragment {
+
+
+    public EateriesFragment() {
+        // Required empty public constructor
+    }
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.tourist_tips);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.tourist_tips, container, false);
 
         //Setting the map of tourist_tips programmatically
-        ImageView mapOfRestaurants = (ImageView) findViewById(R.id.location_map);
+        ImageView mapOfRestaurants = (ImageView) rootView.findViewById(R.id.location_map);
 
         //CAMBIAR MAPA
         mapOfRestaurants.setImageResource(R.drawable.map_restaurants);
@@ -32,12 +46,14 @@ public class RestaurantsActivity extends AppCompatActivity {
                 "Address: Calle Hostos #302", "Mesón D'Bari", "Hours: 345"));
 
         //Creating an ArrayAdapter and a ListView to recycle the views
-        TouristTipAdapter restaurantsItemsAdapter = new TouristTipAdapter(this, restaurantsList);
+        TouristTipAdapter restaurantsItemsAdapter = new TouristTipAdapter(getActivity(), restaurantsList);
 
-        ListView restaurantsListView = (ListView) findViewById(R.id.tourist_tips_list_view);
+        ListView restaurantsListView = (ListView) rootView.findViewById(R.id.tourist_tips_list_view);
 
         //Populating the ListView
         restaurantsListView.setAdapter(restaurantsItemsAdapter);
 
+        return rootView;
     }
+
 }

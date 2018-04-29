@@ -17,10 +17,6 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.android.sdminiguide.TouristGuide"/>
-        <activity android:name=".SightsActivity"/>
-        <activity android:name=".RestaurantsActivity"/>
-        <activity android:name=".HotelsActivity"/>
-        <activity android:name=".EventsActivity"/>
         <activity android:name=".TouristTipDetails"/>
 
     </application>

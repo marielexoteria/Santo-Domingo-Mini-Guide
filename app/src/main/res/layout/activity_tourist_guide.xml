@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tourist_guide_activity"
     android:layout_width="match_parent"
@@ -13,52 +12,16 @@
     un height definido me ocupa mucho espacio debido al tamaño
     de la imagen -->
 
-    <Button
-        android:id="@+id/sights"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/margin_horizontal_guide_me_btn"
-        android:layout_marginTop="@dimen/margin_vertical_guide_me_btn"
-        android:background="@color/colorAccent"
-        android:padding="@dimen/padding_button"
-        android:text="Sights"
-        android:textColor="@android:color/white"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        style="@style/CategoryTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/restaurants"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/sights"
-        android:layout_marginLeft="@dimen/margin_horizontal_guide_me_btn"
-        android:layout_marginTop="@dimen/margin_vertical_guide_me_btn"
-        android:background="@color/colorAccent"
-        android:padding="@dimen/padding_button"
-        android:text="Restaurants"
-        android:textColor="@android:color/white"/>
-
-    <Button
-        android:id="@+id/hotels"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/restaurants"
-        android:layout_marginLeft="@dimen/margin_horizontal_guide_me_btn"
-        android:layout_marginTop="@dimen/margin_vertical_guide_me_btn"
-        android:background="@color/colorAccent"
-        android:padding="@dimen/padding_button"
-        android:text="Hotels"
-        android:textColor="@android:color/white"/>
-
-    <Button
-        android:id="@+id/events"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/hotels"
-        android:layout_marginLeft="@dimen/margin_horizontal_guide_me_btn"
-        android:layout_marginTop="@dimen/margin_vertical_guide_me_btn"
-        android:background="@color/colorAccent"
-        android:padding="@dimen/padding_button"
-        android:text="Events"
-        android:textColor="@android:color/white"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <!-- buscarle la vuelta a lo de poner el footer al final
      de la pantalla-->
@@ -68,10 +31,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""
-        android:layout_below="@id/events"
         android:gravity="center"
         android:layout_marginTop="@dimen/margin_vertical_text"
         android:layout_marginBottom="@dimen/margin_vertical_text"
         android:textColor="@android:color/black"/>
 
-</RelativeLayout>
+</LinearLayout>
