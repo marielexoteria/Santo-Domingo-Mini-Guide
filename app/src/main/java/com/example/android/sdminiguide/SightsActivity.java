@@ -24,20 +24,15 @@ public class SightsActivity extends AppCompatActivity {
 
         //Populating the ArrayList
         sightsList.add(new TouristTip("1) Alcázar de Colón",
-                "Plaza de España, Calle Las Damas",
-                "Tuesday to Sunday 9:00 am to 5:00 pm"));
+                "Address: Plaza de España, Calle Las Damas", "Alcázar de Colón", "Hours: 345"));
         sightsList.add(new TouristTip("2) Monasterio de San Francisco",
-                "Calle Juan Isidro Pérez",
-                "Check on location"));
+                "Address: Calle Juan Isidro Pérez", "Monasterio de San Francisco", "Hours: 678"));
         sightsList.add(new TouristTip("3) Catedral Primada de América",
-                "Calle Isabel La Católica",
-                "Check on location"));
+                "Address: Calle Isabel La Católica", "Catedral Primada de América", "Hours: 901"));
         sightsList.add(new TouristTip("4) Larimar Museum",
-                "Calle Isabel La Católica #54",
-                "Weekdays 9:00 am to 6:00 pm, Saturday 9:00 am to 1:00 pm"));
+                "Address: Calle Isabel La Católica #54", "Larimar Museum", "Hours: 456"));
         sightsList.add(new TouristTip("5) Fortaleza Ozama",
-                "Calle Las Damas #1",
-                "Every day 8:00 am to 5:00 pm"));
+                "Address: Calle Las Damas #1", "Fortaleza Ozama", "Hours: 746"));
 
         //Creating an ArrayAdapter and a ListView to recycle the views
         TouristTipAdapter sightsItemsAdapter = new TouristTipAdapter(this, sightsList);
@@ -46,7 +41,6 @@ public class SightsActivity extends AppCompatActivity {
 
         //Populating the ListView
         sightsListView.setAdapter(sightsItemsAdapter);
-
 
 
 

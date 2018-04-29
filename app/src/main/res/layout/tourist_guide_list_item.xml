@@ -12,14 +12,7 @@
     <!-- cambiar los nombres de los IDs y mover labels a
      strings.xml o infos.xml -->
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/item_location_name_text_view"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:textSize="@dimen/text_size_fragments_screen"
-        tools:text="1) Alcázar"/>
+    <!-- pasar las medidas fijas a dimens.xml, etc. -->
 
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -27,41 +20,47 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/address_label"
-            android:textColor="@android:color/black"
-            android:textStyle="bold"/>
+            android:id="@+id/thumbnail"
+            android:src="@drawable/alcazar_colon_thumbnail"
+            android:layout_weight="0"/>
 
-        <TextView
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/item_address_text_view"
-            android:textColor="@android:color/black"
-            tools:text="Plaza España"/>
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="center">
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_location_name_text_view"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_fragments_screen"
+                tools:text="1) Alcázar"/>
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_address_text_view"
+                android:textColor="@android:color/black"
+                tools:text="Plaza España"/>
 
-        <TextView
+        </LinearLayout>
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/opening_hours"
-            android:textColor="@android:color/black"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/item_opening_hours_text_view"
-            android:textColor="@android:color/black"
-            tools:text="Tuesday to Sunday 9:00 am to 5:00 pm"/>
+            android:src="@drawable/indicator_read_more"
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/padding_general"/>
 
     </LinearLayout>
 

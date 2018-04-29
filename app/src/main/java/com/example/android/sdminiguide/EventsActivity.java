@@ -26,8 +26,8 @@ public class EventsActivity extends AppCompatActivity {
 
         //Populating the ArrayList
         eventsList.add(new TouristTip("1) Bonyé",
-                "Calle Emiliano Tejera",
-                "Sundays 5:00 pm to 10:00 pm"));
+                "Address: Calle Emiliano Tejera", "Bonyé", "Hours: 123"
+                ));
 
         //Creating an ArrayAdapter and a ListView to recycle the views
         TouristTipAdapter eventsItemsAdapter = new TouristTipAdapter(this, eventsList);

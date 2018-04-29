@@ -25,14 +25,11 @@ public class RestaurantsActivity extends AppCompatActivity {
 
         //Populating the ArrayList
         restaurantsList.add(new TouristTip("1) D'Luis Parrillada",
-                "Av. George Washington #25 (Paseo Pte. Billini)",
-                "Every day 8:00 am to 1:00 am"));
+                "Address: Av. George Washington #25", "D'Luis Parrillada", "Hours: 567"));
         restaurantsList.add(new TouristTip("2) Barra Payán",
-                "Av. 30 de marzo #140",
-                "24-hour service"));
+                "Address: Av. 30 de marzo #140", "Barra Payán", "Hours: 890"));
         restaurantsList.add(new TouristTip("3) Mesón D'Bari",
-                "Calle Hostos #302",
-                "Every day 12:00 pm to 12:00 am"));
+                "Address: Calle Hostos #302", "Mesón D'Bari", "Hours: 345"));
 
         //Creating an ArrayAdapter and a ListView to recycle the views
         TouristTipAdapter restaurantsItemsAdapter = new TouristTipAdapter(this, restaurantsList);

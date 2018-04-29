@@ -8,12 +8,15 @@ package com.example.android.sdminiguide;
  * The full info is shown in the details screen.
  */
 
-public class TouristTip {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class TouristTip implements Parcelable {
 
     /* The following 3 items are shown on the fragments screen */
 
     //The thumbnail of the tourist tip
-    //private int xThumbnail;
+    private int xThumbnail;
 
     //The name of the tourist tip used in the format "1) Tourist tip"
     //Because it will be shown in a map with a number instead of a location pin
@@ -28,9 +31,9 @@ public class TouristTip {
     /* The following items are shown on the detail screens, together with the name and opening hours */
 
     //The name of the tourist tip
-    //private int xName;
+    private String xName;
 
-    //The main photo of the tourist tip
+    /*//The main photo of the tourist tip
     /*private int xMainPhoto;
 
     //The description of the tourist tip
@@ -50,18 +53,19 @@ public class TouristTip {
     private int xCoordinates;*/
 
     //Creating the constructor
-    public TouristTip(String nameOnListItem, String address, String openingHours) {
+    public TouristTip(String nameOnListItem, String address, String name, String openingHours) {
         //The variables take the value of the arguments
-       //xThumbnail = thumbnail;
+        //xThumbnail = thumbnail;
         xNameOnListItem = nameOnListItem;
         xAddress = address;
+        xName = name;
         xOpeningHours = openingHours;
         /*public TouristTips (int thumbnail, int locationName, int openingHours, int name,
         int mainPhoto, int description, int address, int phoneNumber, int website, int map,
         int coordinates) {
         xName = name;
         xMainPhoto = photo;
-        xDescription = description;
+
 
         xPhoneNumber = phoneNumber;
         xWebsite = website;
@@ -90,18 +94,20 @@ public class TouristTip {
         return xOpeningHours;
     }
 
+    //Get the name of the tourist tip
+    public String getName() {
+        return xName;
+    }
+
+
     //Get the main photo of the tourist tip
     /*public int getMainPhotoID() {
         return xMainPhoto;
     }
 
-    //Get the name of the tourist tip
-    /*public int getName() {
-        return xName;
-    }
 
     //Get the description of the tourist tip
-    public int getDescriptionID() {
+    /*public int getDescriptionID() {
         return xDescription;
     }
 
@@ -125,5 +131,35 @@ public class TouristTip {
     public int getCoordinatesID() {
         return xCoordinates;
     }*/
+
+    //Using the Parcelable interface to read the info about the pertinent file
+    //in the position of the GridItem when the user of the app touches a specific file
+    //they want to listen to
+    protected TouristTip(Parcel in) {
+        xName = in.readString();
+        xOpeningHours = in.readString();
+    }
+
+    public static final Creator<TouristTip> CREATOR = new Creator<TouristTip>() {
+        @Override
+        public TouristTip createFromParcel(Parcel in) {
+            return new TouristTip(in);
+        }
+
+        @Override
+        public TouristTip[] newArray(int size) {
+            return new TouristTip[size];
+        }
+    };
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(xName);
+        dest.writeString(xOpeningHours);
+    }
 
 }

@@ -26,14 +26,11 @@ public class HotelsActivity extends AppCompatActivity {
 
         //Populating the ArrayList
         hotelsList.add(new TouristTip("1) Hodelpa Nicolás de Ovando",
-                "Calle Las Damas",
-                "-"));
+                "Address: Calle Las Damas", "Hodelpa Nicolás de Ovando", "Hours: 456"));
         hotelsList.add(new TouristTip("2) Casa Naemie",
-                "Calle Isabel La Católica #11",
-                "-"));
+                "Address: Calle Isabel La Católica #11", "Casa Naemie","Hours: 789"));
         hotelsList.add(new TouristTip("3) Hostal Tierra Plana",
-                "Calle Hostos",
-                "-"));
+                "Address: Calle Hostos #357", "Hostal Tierra Plana", "Hours: 234"));
 
         //Creating an ArrayAdapter and a ListView to recycle the views
         TouristTipAdapter hotelsItemsAdapter = new TouristTipAdapter(this, hotelsList);
