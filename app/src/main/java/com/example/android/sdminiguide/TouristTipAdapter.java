@@ -50,10 +50,10 @@ public class TouristTipAdapter extends ArrayAdapter<TouristTip> {
         final TouristTip currentTouristTip = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
-       /* ImageView thumbnail = (ImageView) listItemView.findViewById(R.id.thumbnail);
+        ImageView thumbnail = (ImageView) listItemView.findViewById(R.id.thumbnail);
         // Get the version name from the current AndroidFlavor object and
         // set this text on the name TextView
-        thumbnail.setImageResource(currentTouristTip.getThumbnailID());*/
+        thumbnail.setImageResource(currentTouristTip.getThumbnailID());
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView titleTextView = (TextView) listItemView.findViewById(R.id.item_location_name_text_view);

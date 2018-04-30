@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class TouristTipsCategoryAdapter extends FragmentPagerAdapter {
 
     /** Context of the app */
-    private Context mContext;
+    private Context xContext;
 
     /**
      * Create a new {@link TouristTipsCategoryAdapter} object.
@@ -19,7 +19,7 @@ public class TouristTipsCategoryAdapter extends FragmentPagerAdapter {
      */
     public TouristTipsCategoryAdapter(Context context, FragmentManager fm) {
         super(fm);
-        mContext = context;
+        xContext = context;
     }
 
     /**
@@ -49,13 +49,13 @@ public class TouristTipsCategoryAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0) {
-            return mContext.getString(R.string.fragment_label_sights);
+            return xContext.getString(R.string.fragment_label_sights);
         } else if (position == 1) {
-            return mContext.getString(R.string.fragment_label_eateries);
+            return xContext.getString(R.string.fragment_label_eateries);
         } else if (position == 2) {
-            return mContext.getString(R.string.fragment_label_hotels);
+            return xContext.getString(R.string.fragment_label_hotels);
         } else {
-            return mContext.getString(R.string.fragment_label_events);
+            return xContext.getString(R.string.fragment_label_events);
         }
     }
 }

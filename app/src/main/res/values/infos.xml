@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Names of the places used in the fragments screens
+     because they're associated with numbers on the maps' screenshots-->
+
+    <string name="sight1_fragment">1) Alcázar de Colón</string>
+    <string name="sight2_fragment">2) Monasterio de San Francisco</string>
+    <string name="sight3_fragment">3) Catedral Primada de América</string>
+    <string name="sight4_fragment">4) Larimar Museum</string>
+    <string name="sight5_fragment">5) Fortaleza Ozama</string>
+
+    <string name="eatery1_fragment">1) D\'Luis Parrillada</string>
+    <string name="eatery2_fragment">2) Barra Payán</string>
+    <string name="eatery3_fragment">3) Mesón D\'Bari</string>
+    <string name="eatery4_fragment">4) La Cafetera</string>
+    <string name="eatery5_fragment">5) Pat\'e Palo</string>
+
+    <string name="hotel1_fragment">1) Hodelpa Nicolás de Ovando</string>
+    <string name="hotel2_fragment">2) Casa Naemie</string>
+    <string name="hotel3_fragment">3) Hostal Tierra Plana</string>
+    <string name="hotel4_fragment">4) El Beaterio Guest House</string>
+    <string name="hotel5_fragment">5) Plaza Toledo Bettyes Guest House</string>
+
+    <string name="event1_fragment">1) Bonyé</string>
+    <string name="event2_fragment">2) Casa de Teatro</string>
+
+    <!-- Info to display in the detail screen and some of it on the fragments screens-->
+
     <!-- Info related to Sights > Alcázar de Colón -->
     <string name="sight1_name">Alcázar de Colón</string>
     <string name="sight1_address_text">Plaza de España, Calle Las Damas</string>
@@ -62,45 +88,69 @@
     <string name="sight5_address_for_map">Fortaleza Ozama, Calle Las Damas, Santo+Domingo, Dominican+Republic</string>
 
 
-    <!-- Info related to Restaurants > D'Luis Parrillada -->
-    <string name="restaurant1_name">D\'Luis Parrillada</string>
-    <string name="restaurant1_address_text">Av. George Washington #25 (Paseo Pte. Billini), Ciudad Nueva</string>
-    <string name="restaurant1_opening_hours">Every day 8:00 am to 1:00 am</string>
-    <string name="restaurant1_description">Caribbean and Latin American food in a casual ambiance with
+    <!-- Info related to Eateries > D'Luis Parrillada -->
+    <string name="eatery1_name">D\'Luis Parrillada</string>
+    <string name="eatery1_address_text">Av. George Washington #25 (Paseo Pte. Billini), Ciudad Nueva</string>
+    <string name="eatery1_opening_hours">Every day 8:00 am to 1:00 am</string>
+    <string name="eatery1_description">Caribbean and Latin American food in a casual ambiance with
         views to the Caribbean Sea. Their specialty is grilled meat. The mofongo is highly recommended.</string>
-    <string name="restaurant1_phone_number">+1 809&#8211;686&#8211;2940</string>
-    <string name="restaurant1_website">www.menu.com.do/#!/n/dluis_parrillada</string>
-    <string name="restaurant1_coordinates">0,0</string>
-    <string name="restaurant1_address_for_map">D\'Luis Parrillada, Santo+Domingo, Dominican+Republic</string>
+    <string name="eatery1_phone_number">+1 809&#8211;686&#8211;2940</string>
+    <string name="eatery1_website">www.menu.com.do/#!/n/dluis_parrillada</string>
+    <string name="eatery1_coordinates">0,0</string>
+    <string name="eatery1_address_for_map">D\'Luis Parrillada, Santo+Domingo, Dominican+Republic</string>
 
-    <!-- Info related to Restaurants > Barra Payán -->
-    <string name="restaurant2_name">Barra Payán</string>
-    <string name="restaurant2_address_text">Av. 30 de marzo #140</string>
-    <string name="restaurant2_opening_hours">24-hour service</string>
-    <string name="restaurant2_description">Sandwich shop very popular with the locals for over 40 years.
+    <!-- Info related to Eateries > Barra Payán -->
+    <string name="eatery2_name">Barra Payán</string>
+    <string name="eatery2_address_text">Av. 30 de marzo #140</string>
+    <string name="eatery2_opening_hours">24-hour service</string>
+    <string name="eatery2_description">Sandwich shop very popular with the locals for over 40 years.
         They offer a variety of sandwiches and natural juice, all made on order.</string>
-    <string name="restaurant2_phone_number">+1 809&#8211;689&#8211;6654</string>
-    <string name="restaurant2_website">www.grupobarrapayan.com</string>
-    <string name="restaurant2_coordinates">0,0</string>
-    <string name="restaurant2_address_for_map">Barra Payán, Avenida 30 de marzo, Santo+Domingo,
+    <string name="eatery2_phone_number">+1 809&#8211;689&#8211;6654</string>
+    <string name="eatery2_website">www.grupobarrapayan.com</string>
+    <string name="eatery2_coordinates">0,0</string>
+    <string name="eatery2_address_for_map">Barra Payán, Avenida 30 de marzo, Santo+Domingo,
         Dominican+Republic</string>
 
-    <!-- Info related to Restaurants > Mesón D'Bari -->
-    <string name="restaurant3_name">Mesón D\'Bari</string>
-    <string name="restaurant3_address_text">Calle Hostos #302</string>
-    <string name="restaurant3_opening_hours">Every day 12:00 pm to 12:00 am</string>
-    <string name="restaurant3_description">Dominican cuisine that features "grandma\'s
+    <!-- Info related to Eateries > Mesón D'Bari -->
+    <string name="eatery3_name">Mesón D\'Bari</string>
+    <string name="eatery3_address_text">Calle Hostos #302</string>
+    <string name="eatery3_opening_hours">Every day 12:00 pm to 12:00 am</string>
+    <string name="eatery3_description">Dominican cuisine that features "grandma\'s
         recipes" in an eclectic setting.</string>
-    <string name="restaurant3_phone_number">+1 809&#8211;687&#8211;4091</string>
-    <string name="restaurant3_website">https://www.menu.com.do/#!/n/mesn_d_bari</string>
-    <string name="restaurant3_coordinates">0,0</string>
-    <string name="restaurant3_address_for_map">Mesón D\'Bari, Santo+Domingo, Dominican+Republic</string>
+    <string name="eatery3_phone_number">+1 809&#8211;687&#8211;4091</string>
+    <string name="eatery3_website">www.menu.com.do/#!/n/mesn_d_bari</string>
+    <string name="eatery3_coordinates">0,0</string>
+    <string name="eatery3_address_for_map">Mesón D\'Bari, Santo+Domingo, Dominican+Republic</string>
+
+    <!-- Info related to Eateries > La Cafetera -->
+    <string name="eatery4_name">La Cafetera</string>
+    <string name="eatery4_address_text">Calle El Conde #253</string>
+    <string name="eatery4_opening_hours">Every day 8:00 am to 10:00 pm</string>
+    <string name="eatery4_description">Since the 1930’s offering the best coffee in the city.
+        La Cafetera was the place where bohemians, painters, writers, politicians, and
+        other personalities important in Dominican society used to meet, have coffee and
+        conversations. In addition to coffee, they serve breakfast, lunch and dinner.</string>
+    <string name="eatery4_phone_number">+1 809&#8211;682&#8211;7114</string>
+    <string name="eatery4_website">www.facebook.com/lacafetera.do</string>
+    <string name="eatery4_coordinates">0,0</string>
+    <string name="eatery4_address_for_map">La Cafetera, Calle El Conde, Santo+Domingo, Dominican+Republic</string>
+
+    <!-- Info related to Eateries > Pat'e Palo -->
+    <string name="eatery5_name">Pat\'e Palo</string>
+    <string name="eatery5_address_text">Calle Atarazanas #25, Plaza de España</string>
+    <string name="eatery5_opening_hours">Every day 12:00 pam to 12:00 am</string>
+    <string name="eatery5_description">European Brasserie in the first tavern of the Americas.
+        Mediterranean food in a casual ambiance and views of Alcázar de Colón and Plaza de España.</string>
+    <string name="eatery5_phone_number">+1 809&#8211;687&#8211;8089</string>
+    <string name="eatery5_website">www.patepalo.com</string>
+    <string name="eatery5_coordinates">0,0</string>
+    <string name="eatery5_address_for_map">Pat\'e Palo, Santo+Domingo, Dominican+Republic</string>
 
 
     <!-- Info related to Hotels > Hodelpa Nicolás de Ovando -->
     <string name="hotel1_name">Hodelpa Nicolás de Ovando</string>
     <string name="hotel1_address_text">Calle Las Damas</string>
-    <string name="hotel1_opening_hours">N/A</string>
+    <string name="hotel1_opening_hours">Check-in from 3:00 pm</string>
     <string name="hotel1_description">Located in the heart of the Colonial City, the 3 houses and their
         gorgeous patios include the original home of the town’s founder, Governor Nicolás de Ovando.
         On the famous street “Las Damas”, the first paved road of the New World.</string>
@@ -113,26 +163,51 @@
     <!-- Info related to Hotels > Casa Naemie -->
     <string name="hotel2_name">Casa Naemie</string>
     <string name="hotel2_address_text">Calle Isabel La Católica #11</string>
-    <string name="hotel2_opening_hours">N/A</string>
+    <string name="hotel2_opening_hours">Check-in 2:00 pm to 4:00 pm</string>
     <string name="hotel2_description">Small hotel situated in the oldest part of the Colonial City,
         just minutes away from the Cathedral, El Conde street and other interesting places to visit.</string>
-    <string name="hotel2_phone_number">+1 809&#8211;689&#2215;9955</string>
+    <string name="hotel2_phone_number">+1 809&#8211;689&#8211;2215</string>
     <string name="hotel2_website">www.casanaemie.com</string>
     <string name="hotel2_coordinates">0,0</string>
     <string name="hotel2_address_for_map">Casa Naemie, Calle Isabel La Católica
         , Santo+Domingo, Dominican+Republic</string>
 
-    <!-- Info related to Hotels > Hostal Tierra Plana-->
+    <!-- Info related to Hotels > Hostal Tierra Plana -->
     <string name="hotel3_name">Hostal Tierra Plana</string>
     <string name="hotel3_address_text">Calle Hostos #357</string>
-    <string name="hotel3_opening_hours">N/A</string>
+    <string name="hotel3_opening_hours">Check-in from 1:30 pm</string>
     <string name="hotel3_description">Hostel situated in the heart of the Colonial City, close to many
         of the attractions and places to eat. Their terrace overlooks the Monasterio de San Francisco,
         which hosts Bonyé (a son street party) every Sunday.</string>
-    <string name="hotel3_phone_number">+1 809&#8211;686&#2215;0120</string>
+    <string name="hotel3_phone_number">+1 809&#8211;686&#8211;0120</string>
     <string name="hotel3_website">www.hostaltierraplana.com</string>
     <string name="hotel3_coordinates">0,0</string>
     <string name="hotel3_address_for_map">Hostal Tierra Plana, Calle Hostos,
+        Santo+Domingo, Dominican+Republic</string>
+
+    <!-- Info related to Hotels > El Beaterio -->
+    <string name="hotel4_name">El Beaterio Guest House</string>
+    <string name="hotel4_address_text">Calle Duarte #8</string>
+    <string name="hotel4_opening_hours">Check-in from 3:00 pm</string>
+    <string name="hotel4_description">El Beaterio is housed in a former convent from 1530. The
+        building has been restored respecting its original architecture and its history, giving it
+        the distinction of becoming the first house-museum of the Dominican Republic.</string>
+    <string name="hotel4_phone_number">+1 809&#8211;687&#8211;8657</string>
+    <string name="hotel4_website">www.elbeaterio.com</string>
+    <string name="hotel4_coordinates">0,0</string>
+    <string name="hotel4_address_for_map">El Beaterio Guest House, Calle Duarte,
+        Santo+Domingo, Dominican+Republic</string>
+
+    <!-- Info related to Hotels > Bettyes -->
+    <string name="hotel5_name">Plaza Toledo Bettyes Guest House</string>
+    <string name="hotel5_address_text">Calle Isabel La Católica #163</string>
+    <string name="hotel5_opening_hours">Check-in from 3:00 pm</string>
+    <string name="hotel5_description">Backpacker style guest house in the Colonial City, only
+        one block away from the Cathedral, Plaza de España and the main shopping street.</string>
+    <string name="hotel5_phone_number">+1 829&#8211;747&#8211;2017</string>
+    <string name="hotel5_website">hostels.costasur.com</string>
+    <string name="hotel5_coordinates">0,0</string>
+    <string name="hotel5_address_for_map">Plaza Toledo Bettyes Guest House, Calle Isabel La Católica,
         Santo+Domingo, Dominican+Republic</string>
 
 
@@ -142,10 +217,22 @@
     <string name="event1_opening_hours">Sundays 5:00 pm to 10:00 pm</string>
     <string name="event1_description">Free musical performances of merengue, son, and other Latin rhythms.</string>
     <string name="event1_phone_number">N/A</string>
-    <string name="event1_website">https://www.facebook.com/GrupoBonye</string>
+    <string name="event1_website">www.facebook.com/GrupoBonye</string>
     <string name="event1_coordinates">0,0</string>
     <string name="event1_address_for_map">Grupo Bonye, Calle Emiliano Tejera, Santo+Domingo,
         Dominican+Republic</string>
 
+    <!-- Info related to Events > Casa de Teatro -->
+    <string name="event2_name">Casa de Teatro</string>
+    <string name="event2_address_text">Calle Arzobispo Meriño (Santo Domingo) #110</string>
+    <string name="event2_opening_hours">Every day 9:00 am to 1:00 pm and 2:30 pm to 2:00 am</string>
+    <string name="event2_description">Cultural, not-for-profit center with a varied offering of theater plays,
+        karaoke, concerts with local artists, dance performances, poetry, music, cinema, activities for children,
+        art exhibitions, etc. Check on their website for specific events.</string>
+    <string name="event2_phone_number">+1 809&#8211;689&#8211;3430</string>
+    <string name="event2_website">www.facebook.com/casadeteatro</string>
+    <string name="event2_coordinates">0,0</string>
+    <string name="event2_address_for_map">Casa de Teatro, Calle Santo Domingo 110, Santo+Domingo,
+        Dominican+Republic</string>
 
 </resources>

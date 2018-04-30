@@ -1,43 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- layout to display the content of the mini guide -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/tourist_guide"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
     <!-- rehacer esto sin medidas fijas -->
-
-    <ImageView
-        android:id="@+id/location_map"
-        android:layout_width="match_parent"
-        android:layout_height="195dp"
-        android:scaleType="fitStart"/>
 
     <!-- cambiar a mi diseño en Sketch -->
 
     <ListView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/tourist_tips_list_view"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="@dimen/padding_general"
-        android:paddingRight="@dimen/padding_general"
-        android:paddingTop="@dimen/padding_general"/>
-
-    <!-- esto no se despliega en el app - verificar cuando
-    el app esté lista -->
-    <TextView
-        android:id="@+id/footer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="Plaza España"
-        android:gravity="center"
-        android:layout_marginTop="@dimen/margin_vertical_text"
-        android:layout_marginBottom="@dimen/margin_vertical_text"
-        android:textColor="@android:color/black"/>
-
-</LinearLayout>
+        android:paddingBottom="@dimen/padding_bottom_listview"/>

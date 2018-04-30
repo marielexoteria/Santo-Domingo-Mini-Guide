@@ -20,21 +20,21 @@ public class TouristTip implements Parcelable {
 
     //The name of the tourist tip used in the format "1) Tourist tip"
     //Because it will be shown in a map with a number instead of a location pin
-    private String xNameOnListItem;
+    private int xNameOnListItem;
 
     //The address of the tourist tip
-    private String xAddress;
+    private int xAddress;
 
     //The opening hours of the tourist tip
-    private String xOpeningHours;
+    private int xOpeningHours;
 
     /* The following items are shown on the detail screens, together with the name and opening hours */
 
     //The name of the tourist tip
-    private String xName;
+    private int xName;
 
-    /*//The main photo of the tourist tip
-    /*private int xMainPhoto;
+    //The main photo of the tourist tip
+    private int xMainPhoto;
 
     //The description of the tourist tip
     private int xDescription;
@@ -50,94 +50,96 @@ public class TouristTip implements Parcelable {
 
     //The coordinates of the tourist tip, to be used to open the user's Map app to
     //see the location of the tourist tip
-    private int xCoordinates;*/
+    private int xCoordinates;
 
     //Creating the constructor
-    public TouristTip(String nameOnListItem, String address, String name, String openingHours) {
+    public TouristTip(int thumbnail, int nameOnListItem, int address, int name, int openingHours, int mainPhoto,
+                      int description, int phoneNumber, int website, int map,
+                      int coordinates) {
         //The variables take the value of the arguments
-        //xThumbnail = thumbnail;
+        xThumbnail = thumbnail;
         xNameOnListItem = nameOnListItem;
         xAddress = address;
         xName = name;
         xOpeningHours = openingHours;
-        /*public TouristTips (int thumbnail, int locationName, int openingHours, int name,
-        int mainPhoto, int description, int address, int phoneNumber, int website, int map,
-        int coordinates) {
-        xName = name;
-        xMainPhoto = photo;
-
-
+        xDescription = description;
+        xMainPhoto = mainPhoto;
         xPhoneNumber = phoneNumber;
         xWebsite = website;
         xMap = map;
-        xCoordinates = coordinates;*/
+        xCoordinates = coordinates;
 
     }
 
     //Get the thumbnail of the tourist tip
-    /*public int getThumbnailID() {
+    public int getThumbnailID() {
         return xThumbnail;
-    }*/
+    }
 
     //Get the name of the tourist tip used in the format "1) Tourist tip"
-    public String getNameOnListItem() {
+    public int getNameOnListItem() {
         return xNameOnListItem;
     }
 
     //Get the address of the tourist tip
-    public String getAddress() {
+    public int getAddress() {
         return xAddress;
     }
 
     //Get the opening hours of the tourist tip
-    public String getOpeningHours() {
+    public int getOpeningHours() {
         return xOpeningHours;
     }
 
     //Get the name of the tourist tip
-    public String getName() {
+    public int getName() {
         return xName;
     }
 
 
     //Get the main photo of the tourist tip
-    /*public int getMainPhotoID() {
+    public int getMainPhoto() {
         return xMainPhoto;
     }
 
-
     //Get the description of the tourist tip
-    /*public int getDescriptionID() {
+    public int getDescription() {
         return xDescription;
     }
 
-
     //Get the phone number of the tourist tip
-    public int getPhoneNumberID() {
+    public int getPhoneNumber() {
         return xPhoneNumber;
     }
 
     //Get the website of the tourist tip
-    public int getWebsiteID() {
+    public int getWebsite() {
         return xWebsite;
     }
 
     //Get the screenshot of the map showing the tourist tip
-    public int getMapID() {
+    public int getMap() {
         return xMap;
     }
 
     //Get the coordinates of the tourist tip
-    public int getCoordinatesID() {
+    public int getCoordinates() {
         return xCoordinates;
-    }*/
+    }
 
-    //Using the Parcelable interface to read the info about the pertinent file
-    //in the position of the GridItem when the user of the app touches a specific file
+    //Using the Parcelable interface to read the info about the pertinent file in the
+    //position of the ListItem when the user of the app touches a specific file
     //they want to listen to
     protected TouristTip(Parcel in) {
-        xName = in.readString();
-        xOpeningHours = in.readString();
+        xMainPhoto = in.readInt();
+        xName = in.readInt();
+        xDescription = in.readInt();
+        xAddress = in.readInt();
+        xPhoneNumber = in.readInt();
+        xOpeningHours = in.readInt();
+        xWebsite = in.readInt();
+        xMap = in.readInt();
+        xCoordinates = in.readInt();
     }
 
     public static final Creator<TouristTip> CREATOR = new Creator<TouristTip>() {
@@ -158,8 +160,15 @@ public class TouristTip implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(xName);
-        dest.writeString(xOpeningHours);
+        dest.writeInt(xMainPhoto);
+        dest.writeInt(xName);
+        dest.writeInt(xDescription);
+        dest.writeInt(xAddress);
+        dest.writeInt(xPhoneNumber);
+        dest.writeInt(xOpeningHours);
+        dest.writeInt(xWebsite);
+        dest.writeInt(xMap);
+        dest.writeInt(xCoordinates);
     }
 
 }

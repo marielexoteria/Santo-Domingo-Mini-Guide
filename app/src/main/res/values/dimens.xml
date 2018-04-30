@@ -11,16 +11,32 @@
     <dimen name="padding_button">16dp</dimen>
     <dimen name="padding_general">16dp</dimen>
 
+
     <!-- Margins -->
     <dimen name="margin_horizontal_text">16dp</dimen>
-    <dimen name="margin_vertical_text">16dp</dimen> <!-- also used in activity_tourist_guide (footer) -->
     <dimen name="margin_general">16dp</dimen>
-
     <dimen name="margin_horizontal_guide_me_btn">20dp</dimen>
     <dimen name="margin_vertical_guide_me_btn">20dp</dimen>
 
     <!-- End of dimensions used in activity_main.xml -->
 
+    <!-- Beginning of dimensions used in tourist_tips.xml -->
+
+    <dimen name="padding_bottom_listview">10dp</dimen>
+
+    <!-- End of dimensions used in tourist_tips.xml  -->
+
+    <!-- Beginning of dimensions used in the fragments screen -->
+
     <dimen name="text_size_fragments_screen">15sp</dimen>
+
+    <!-- End of dimensions used in the fragments screen -->
+
+    <!-- Beginning of Footer -->
+
+    <dimen name="footer_margin_top">20dp</dimen>
+    <dimen name="footer_size">6sp</dimen>
+    <dimen name="emoji_heart">0x2665</dimen>
+    <!-- End of Footer -->
 
 </resources>
