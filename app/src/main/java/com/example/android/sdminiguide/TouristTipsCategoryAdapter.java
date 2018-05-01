@@ -14,11 +14,11 @@ public class TouristTipsCategoryAdapter extends FragmentPagerAdapter {
      * Create a new {@link TouristTipsCategoryAdapter} object.
      *
      * @param context is the context of the app
-     * @param fm is the fragment manager that will keep each fragment's state in the adapter
+     * @param fragmentManager is the fragment manager that will keep each fragment's state in the adapter
      *           across swipes.
      */
-    public TouristTipsCategoryAdapter(Context context, FragmentManager fm) {
-        super(fm);
+    public TouristTipsCategoryAdapter(Context context, FragmentManager fragmentManager) {
+        super(fragmentManager);
         xContext = context;
     }
 

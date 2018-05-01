@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- cuando acabe de programar debo buscarle la vuelta a lo de
-la posición del texto y el botón en landscape -->
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -32,7 +30,7 @@ la posición del texto y el botón en landscape -->
         android:layout_below="@id/app_title"
         android:layout_marginLeft="@dimen/margin_horizontal_text"
         android:text="@string/app_subheading1"
-        android:textColor="#fff"
+        android:textColor="@android:color/white"
         android:textSize="@dimen/title_subheading" />
 
     <TextView

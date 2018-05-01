@@ -1,30 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Names of the places used in the fragments screens
-     because they're associated with numbers on the maps' screenshots-->
+    <!-- To create a numbered list in the fragments screen because each fragment has
+    a screenshop of a map showing the places with numbers instead of location pins -->
+    <string name="numbered_place">%1$d) %2$s</string>
 
-    <string name="sight1_fragment">1) Alcázar de Colón</string>
-    <string name="sight2_fragment">2) Monasterio de San Francisco</string>
-    <string name="sight3_fragment">3) Catedral Primada de América</string>
-    <string name="sight4_fragment">4) Larimar Museum</string>
-    <string name="sight5_fragment">5) Fortaleza Ozama</string>
-
-    <string name="eatery1_fragment">1) D\'Luis Parrillada</string>
-    <string name="eatery2_fragment">2) Barra Payán</string>
-    <string name="eatery3_fragment">3) Mesón D\'Bari</string>
-    <string name="eatery4_fragment">4) La Cafetera</string>
-    <string name="eatery5_fragment">5) Pat\'e Palo</string>
-
-    <string name="hotel1_fragment">1) Hodelpa Nicolás de Ovando</string>
-    <string name="hotel2_fragment">2) Casa Naemie</string>
-    <string name="hotel3_fragment">3) Hostal Tierra Plana</string>
-    <string name="hotel4_fragment">4) El Beaterio Guest House</string>
-    <string name="hotel5_fragment">5) Plaza Toledo Bettyes Guest House</string>
-
-    <string name="event1_fragment">1) Bonyé</string>
-    <string name="event2_fragment">2) Casa de Teatro</string>
-
-    <!-- Info to display in the detail screen and some of it on the fragments screens-->
+    <!-- Beginning of info to display in the detail screen and
+    on the fragments screens (address_text) -->
 
     <!-- Info related to Sights > Alcázar de Colón -->
     <string name="sight1_name">Alcázar de Colón</string>
@@ -235,4 +216,5 @@
     <string name="event2_address_for_map">Casa de Teatro, Calle Santo Domingo 110, Santo+Domingo,
         Dominican+Republic</string>
 
+    <!-- End of info to display in the detail screen and on the fragments screens (address_text) -->
 </resources>

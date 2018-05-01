@@ -4,5 +4,5 @@
     android:id="@+id/footer"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:text="Plaza España"
-    android:layout_marginTop="@dimen/footer_margin_top"/>
+    android:layout_marginTop="@dimen/footer_margin_top"
+    tools:text="Plaza de España"/>

@@ -19,10 +19,11 @@ public class MainActivity extends AppCompatActivity {
         guideMe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),TouristGuide.class);
-                startActivity(i);
+                Intent intent = new Intent(getApplicationContext(),TouristGuide.class);
+                startActivity(intent);
             }
         });
     }
+
 
 }

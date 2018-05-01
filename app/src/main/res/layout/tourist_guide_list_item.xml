@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Layout for a single list item -->
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,11 +9,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="@dimen/padding_general">
-
-    <!-- cambiar los nombres de los IDs y mover labels a
-     strings.xml o infos.xml -->
-
-    <!-- pasar las medidas fijas a dimens.xml, etc. -->
 
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -24,25 +20,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/thumbnail"
-            android:src="@drawable/alcazar_colon_thumbnail"
-            android:layout_weight="0"/>
+            android:layout_weight="0"
+            tools:src="@drawable/alcazar_thumbnail"/>
 
         <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="10dp"
+            android:paddingLeft="@dimen/margin_thumbnail_text"
             android:layout_weight="1"
             android:layout_gravity="center">
 
+            <!-- reemplazar paddingLeft arriba por margin left a ver qué pasa -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/item_location_name_text_view"
                 android:textColor="@android:color/black"
                 android:textStyle="bold"
-                android:textSize="@dimen/text_size_fragments_screen"
+                android:textSize="@dimen/text_size_item_name_listview"
                 tools:text="1) Alcázar"/>
 
             <TextView

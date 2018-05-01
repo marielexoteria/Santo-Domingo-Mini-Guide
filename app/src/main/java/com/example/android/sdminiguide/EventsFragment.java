@@ -43,14 +43,15 @@ public class EventsFragment extends Fragment {
         ArrayList<TouristTip> eventsList = new ArrayList<TouristTip>();
 
         //Populating the ArrayList
-        eventsList.add(new TouristTip(R.drawable.alcazar_colon_thumbnail, R.string.event1_fragment,
-                R.string.event1_address_text, R.string.event1_name, R.string.event1_opening_hours,
-                R.drawable.map_events, R.string.event1_description, R.string.event1_phone_number,
-                R.string.event1_website, R.drawable.map_events, R.string.event1_address_for_map));
-        eventsList.add(new TouristTip(R.drawable.alcazar_colon_thumbnail, R.string.event2_fragment,
-                R.string.event2_address_text, R.string.event2_name, R.string.event2_opening_hours,
-                R.drawable.map_events, R.string.event2_description, R.string.event2_phone_number,
-                R.string.event2_website, R.drawable.map_events, R.string.event2_address_for_map));
+        eventsList.add(new TouristTip(R.drawable.bonye_thumbnail, R.string.event1_name,
+                R.string.event1_address_text, R.drawable.map_hotels, R.string.event1_description,
+                R.string.event1_phone_number, R.string.event1_opening_hours, R.string.event1_website,
+                R.drawable.map_restaurants, R.string.event1_coordinates, R.string.event1_address_for_map));
+
+        eventsList.add(new TouristTip(R.drawable.casa_de_teatro_thumbnail, R.string.event2_name,
+                R.string.event2_address_text, R.drawable.map_hotels, R.string.event2_description,
+                R.string.event2_phone_number, R.string.event2_opening_hours, R.string.event2_website,
+                R.drawable.map_restaurants, R.string.event2_coordinates, R.string.event2_address_for_map));
 
         //Creating an ArrayAdapter and a ListView to recycle the views
         TouristTipAdapter eventsItemsAdapter = new TouristTipAdapter(getActivity(), eventsList);
@@ -75,7 +76,7 @@ public class EventsFragment extends Fragment {
         /*For some reason leaving these values as is, instead of using the codes for the
          * Dominican flag, works.
          */
-        String country = "DO"; //ISO code for Dominican Republic
+        String country = getString(R.string.country_iso_code); //ISO code for Dominican Republic  String country = "DO";
 
         int firstChar = Character.codePointAt(country, 0) - asciiOffset + flagOffset;
         int secondChar = Character.codePointAt(country, 1) - asciiOffset + flagOffset;

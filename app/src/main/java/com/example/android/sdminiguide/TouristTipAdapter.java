@@ -37,35 +37,34 @@ public class TouristTipAdapter extends ArrayAdapter<TouristTip> {
     @NonNull
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        // Check if the existing view is being reused, otherwise inflate the view
+        //Check if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
         if(listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.tourist_guide_list_item, parent, false);
         }
 
-        //CAMBIAR COMENTARIOS
-
-        // Get the {@link AndroidFlavor} object located at this position in the list
+        //Get the {@link currentTouristTip} object located at this position in the list
         final TouristTip currentTouristTip = getItem(position);
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        //Find the ImageView in tourist_guide_list_item.xml
         ImageView thumbnail = (ImageView) listItemView.findViewById(R.id.thumbnail);
-        // Get the version name from the current AndroidFlavor object and
-        // set this text on the name TextView
-        thumbnail.setImageResource(currentTouristTip.getThumbnailID());
+        //Get the thumbnail from the current currentTouristTip object and
+        //set this text on the name TextView
+        thumbnail.setImageResource(currentTouristTip.getThumbnail());
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
-        TextView titleTextView = (TextView) listItemView.findViewById(R.id.item_location_name_text_view);
-        // Get the version name from the current AndroidFlavor object and
-        // set this text on the name TextView
-        titleTextView.setText(currentTouristTip.getNameOnListItem());
+        //Find the TextView in tourist_guide_list_item.xml
+        TextView nameListItem = (TextView) listItemView.findViewById(R.id.item_location_name_text_view);
+        //Get the thumbnail from the current currentTouristTip object and
+        //set this text on the name TextView
+        nameListItem.setText(activityContext.getString(R.string.numbered_place, position +1,
+                activityContext.getString(currentTouristTip.getName())));
 
-        // Find the TextView in the list_item.xml layout with the ID version_number
-        TextView addressTextView = (TextView) listItemView.findViewById(R.id.item_address_text_view);
-        // Get the version number from the current AndroidFlavor object and
-        // set this text on the number TextView
-        addressTextView.setText(currentTouristTip.getAddress());
+        //Find the TextView in tourist_guide_list_item.xml
+        TextView addressListItem = (TextView) listItemView.findViewById(R.id.item_address_text_view);
+        //Get the thumbnail from the current currentTouristTip object and
+        //set this text on the name TextView
+        addressListItem.setText(currentTouristTip.getAddress());
 
 
         //Opening the Now Playing activity upon clicking anywhere in the grid item.

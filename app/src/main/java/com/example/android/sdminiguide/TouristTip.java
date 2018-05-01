@@ -1,9 +1,9 @@
 package com.example.android.sdminiguide;
 
 /*
- * {@Link TouristTips} represents a tourist tip to show as a sight, a restaurant, a hotel or an event.
- * The info about the tourist tip is split between 2 screens
- * The fragments screen will only list the name of the place, the address and opening hours
+ * {@Link TouristTip} represents a tourist tip to show as a sight, a place to eat (eatery), a hotel
+ * or an event. The info about the tourist tip is split between 2 screens.
+ * The fragments screen will only list the name of the place and the address
  * together with a thumbnail.
  * The full info is shown in the details screen.
  */
@@ -18,20 +18,13 @@ public class TouristTip implements Parcelable {
     //The thumbnail of the tourist tip
     private int xThumbnail;
 
-    //The name of the tourist tip used in the format "1) Tourist tip"
-    //Because it will be shown in a map with a number instead of a location pin
-    private int xNameOnListItem;
+    //The name of the tourist tip
+    private int xName;
 
     //The address of the tourist tip
     private int xAddress;
 
-    //The opening hours of the tourist tip
-    private int xOpeningHours;
-
-    /* The following items are shown on the detail screens, together with the name and opening hours */
-
-    //The name of the tourist tip
-    private int xName;
+    /* The following items are shown on the details screen, together with xName, xAddress */
 
     //The main photo of the tourist tip
     private int xMainPhoto;
@@ -42,53 +35,44 @@ public class TouristTip implements Parcelable {
     //The phone number of the tourist tip
     private int xPhoneNumber;
 
+    //The opening hours of the tourist tip
+    private int xOpeningHours;
+
     //The website of the tourist tip
     private int xWebsite;
 
     //The screenshot of the map showing the tourist tip
     private int xMap;
 
-    //The coordinates of the tourist tip, to be used to open the user's Map app to
+    //The coordinates of the tourist tip, to be used to open Google Maps to
     //see the location of the tourist tip
     private int xCoordinates;
 
+    //The address of the tourist tip, to be used to open Google Maps to
+    //see the location of the tourist tip
+    private int xAddressForMap;
+
     //Creating the constructor
-    public TouristTip(int thumbnail, int nameOnListItem, int address, int name, int openingHours, int mainPhoto,
-                      int description, int phoneNumber, int website, int map,
-                      int coordinates) {
+    public TouristTip(int thumbnail, int name, int address, int mainPhoto, int description,
+                       int phoneNumber, int openingHours, int website, int map,
+                      int coordinates, int addressForMap) {
         //The variables take the value of the arguments
         xThumbnail = thumbnail;
-        xNameOnListItem = nameOnListItem;
-        xAddress = address;
         xName = name;
-        xOpeningHours = openingHours;
-        xDescription = description;
+        xAddress = address;
         xMainPhoto = mainPhoto;
+        xDescription = description;
         xPhoneNumber = phoneNumber;
+        xOpeningHours = openingHours;
         xWebsite = website;
         xMap = map;
         xCoordinates = coordinates;
-
+        xAddressForMap = addressForMap;
     }
 
     //Get the thumbnail of the tourist tip
-    public int getThumbnailID() {
+    public int getThumbnail() {
         return xThumbnail;
-    }
-
-    //Get the name of the tourist tip used in the format "1) Tourist tip"
-    public int getNameOnListItem() {
-        return xNameOnListItem;
-    }
-
-    //Get the address of the tourist tip
-    public int getAddress() {
-        return xAddress;
-    }
-
-    //Get the opening hours of the tourist tip
-    public int getOpeningHours() {
-        return xOpeningHours;
     }
 
     //Get the name of the tourist tip
@@ -96,6 +80,10 @@ public class TouristTip implements Parcelable {
         return xName;
     }
 
+    //Get the address of the tourist tip
+    public int getAddress() {
+        return xAddress;
+    }
 
     //Get the main photo of the tourist tip
     public int getMainPhoto() {
@@ -110,6 +98,11 @@ public class TouristTip implements Parcelable {
     //Get the phone number of the tourist tip
     public int getPhoneNumber() {
         return xPhoneNumber;
+    }
+
+    //Get the opening hours of the tourist tip
+    public int getOpeningHours() {
+        return xOpeningHours;
     }
 
     //Get the website of the tourist tip
@@ -127,9 +120,14 @@ public class TouristTip implements Parcelable {
         return xCoordinates;
     }
 
-    //Using the Parcelable interface to read the info about the pertinent file in the
-    //position of the ListItem when the user of the app touches a specific file
-    //they want to listen to
+    //Get the address of the tourist tip to show on Google Maps
+    public int getAddressForMap() {
+        return xAddressForMap;
+    }
+
+    //Using the Parcelable interface to read the info about the tourist tip in the
+    //position of the ListItem when the user of the app wants to read more about a
+    //specific tourist tip
     protected TouristTip(Parcel in) {
         xMainPhoto = in.readInt();
         xName = in.readInt();
@@ -140,6 +138,7 @@ public class TouristTip implements Parcelable {
         xWebsite = in.readInt();
         xMap = in.readInt();
         xCoordinates = in.readInt();
+        xAddressForMap = in.readInt();
     }
 
     public static final Creator<TouristTip> CREATOR = new Creator<TouristTip>() {
@@ -153,6 +152,7 @@ public class TouristTip implements Parcelable {
             return new TouristTip[size];
         }
     };
+
     @Override
     public int describeContents() {
         return 0;
@@ -169,6 +169,7 @@ public class TouristTip implements Parcelable {
         dest.writeInt(xWebsite);
         dest.writeInt(xMap);
         dest.writeInt(xCoordinates);
+        dest.writeInt(xAddressForMap);
     }
 
 }

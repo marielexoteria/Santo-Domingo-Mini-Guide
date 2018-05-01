@@ -44,26 +44,30 @@ public class EateriesFragment extends Fragment {
         ArrayList<TouristTip> restaurantsList = new ArrayList<TouristTip>();
 
         //Populating the ArrayList
-        restaurantsList.add(new TouristTip(R.drawable.alcazar_colon_thumbnail, R.string.eatery1_fragment,
-                R.string.eatery1_address_text, R.string.eatery1_name, R.string.eatery1_opening_hours,
-                R.drawable.map_events, R.string.eatery1_description, R.string.eatery1_phone_number,
-                R.string.eatery1_website, R.drawable.map_events, R.string.eatery1_address_for_map));
-        restaurantsList.add(new TouristTip(R.drawable.alcazar_colon_thumbnail, R.string.eatery2_fragment,
-                R.string.eatery2_address_text, R.string.eatery2_name, R.string.eatery2_opening_hours,
-                R.drawable.map_events, R.string.eatery2_description, R.string.eatery2_phone_number,
-                R.string.eatery2_website, R.drawable.map_events, R.string.eatery2_address_for_map));
-        restaurantsList.add(new TouristTip(R.drawable.alcazar_colon_thumbnail, R.string.eatery3_fragment,
-                R.string.eatery3_address_text, R.string.eatery3_name, R.string.eatery3_opening_hours,
-                R.drawable.map_events, R.string.eatery3_description, R.string.eatery3_phone_number,
-                R.string.eatery3_website, R.drawable.map_events, R.string.eatery3_address_for_map));
-        restaurantsList.add(new TouristTip(R.drawable.alcazar_colon_thumbnail, R.string.eatery4_fragment,
-                R.string.eatery4_address_text, R.string.eatery4_name, R.string.eatery4_opening_hours,
-                R.drawable.map_events, R.string.eatery3_description, R.string.eatery4_phone_number,
-                R.string.eatery4_website, R.drawable.map_events, R.string.eatery4_address_for_map));
-        restaurantsList.add(new TouristTip(R.drawable.alcazar_colon_thumbnail, R.string.eatery5_fragment,
-                R.string.eatery5_address_text, R.string.eatery5_name, R.string.eatery5_opening_hours,
-                R.drawable.map_events, R.string.eatery5_description, R.string.eatery5_phone_number,
-                R.string.eatery5_website, R.drawable.map_events, R.string.eatery5_address_for_map));
+        restaurantsList.add(new TouristTip(R.drawable.dluis_thumbnail, R.string.eatery1_name,
+                R.string.eatery1_address_text, R.drawable.map_hotels, R.string.eatery1_description,
+                R.string.eatery1_phone_number, R.string.eatery1_opening_hours, R.string.eatery1_website,
+                R.drawable.map_restaurants, R.string.eatery1_coordinates, R.string.eatery1_address_for_map));
+
+        restaurantsList.add(new TouristTip(R.drawable.payan_thumbnail, R.string.eatery2_name,
+                R.string.eatery2_address_text, R.drawable.map_hotels, R.string.eatery2_description,
+                R.string.eatery2_phone_number, R.string.eatery2_opening_hours, R.string.eatery2_website,
+                R.drawable.map_restaurants, R.string.eatery2_coordinates, R.string.eatery2_address_for_map));
+
+        restaurantsList.add(new TouristTip(R.drawable.meson_thumbnail, R.string.eatery3_name,
+                R.string.eatery3_address_text, R.drawable.map_hotels, R.string.eatery3_description,
+                R.string.eatery3_phone_number, R.string.eatery3_opening_hours, R.string.eatery3_website,
+                R.drawable.map_restaurants, R.string.eatery3_coordinates, R.string.eatery3_address_for_map));
+
+        restaurantsList.add(new TouristTip(R.drawable.alcazar_thumbnail, R.string.eatery4_name,
+                R.string.eatery4_address_text, R.drawable.map_hotels, R.string.eatery4_description,
+                R.string.eatery4_phone_number, R.string.eatery4_opening_hours, R.string.eatery4_website,
+                R.drawable.map_restaurants, R.string.eatery4_coordinates, R.string.eatery4_address_for_map));
+
+        restaurantsList.add(new TouristTip(R.drawable.patepalo_thumbnail, R.string.eatery5_name,
+                R.string.eatery5_address_text, R.drawable.map_hotels, R.string.eatery5_description,
+                R.string.eatery5_phone_number, R.string.eatery5_opening_hours, R.string.eatery5_website,
+                R.drawable.map_restaurants, R.string.eatery5_coordinates, R.string.eatery5_address_for_map));
 
         //Creating an ArrayAdapter and a ListView to recycle the views
         TouristTipAdapter restaurantsItemsAdapter = new TouristTipAdapter(getActivity(), restaurantsList);
@@ -88,7 +92,7 @@ public class EateriesFragment extends Fragment {
         /*For some reason leaving these values as is, instead of using the codes for the
          * Dominican flag, works.
          */
-        String country = "DO"; //ISO code for Dominican Republic
+        String country = getString(R.string.country_iso_code); //ISO code for Dominican Republic  String country = "DO";
 
         int firstChar = Character.codePointAt(country, 0) - asciiOffset + flagOffset;
         int secondChar = Character.codePointAt(country, 1) - asciiOffset + flagOffset;

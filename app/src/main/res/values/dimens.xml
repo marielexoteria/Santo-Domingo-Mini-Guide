@@ -11,7 +11,6 @@
     <dimen name="padding_button">16dp</dimen>
     <dimen name="padding_general">16dp</dimen>
 
-
     <!-- Margins -->
     <dimen name="margin_horizontal_text">16dp</dimen>
     <dimen name="margin_general">16dp</dimen>
@@ -21,22 +20,30 @@
     <!-- End of dimensions used in activity_main.xml -->
 
     <!-- Beginning of dimensions used in tourist_tips.xml -->
-
+    <dimen name="text_size_item_name_listview">15sp</dimen>
     <dimen name="padding_bottom_listview">10dp</dimen>
-
     <!-- End of dimensions used in tourist_tips.xml  -->
 
-    <!-- Beginning of dimensions used in the fragments screen -->
+    <!-- Beginning of dimensions used in tourist_guide_list_item.xml -->
+    <dimen name="margin_thumbnail_text">10dp</dimen>
+    <!-- End of dimensions used in tourist_guide_list_item.xml -->
 
-    <dimen name="text_size_fragments_screen">15sp</dimen>
+    <!-- Beginning of dimensions used in tourist_tip_details.xml -->
+    <dimen name="photo_height">195dp</dimen> <!-- also in header.xml -->
+    <dimen name="margin_top_details_screen">10dp</dimen>
+    <dimen name="margin_left_details_screen">16dp</dimen>
+    <!-- End of dimensions used in tourist_tip_details.xml -->
 
-    <!-- End of dimensions used in the fragments screen -->
-
-    <!-- Beginning of Footer -->
-
+    <!-- Beginning of the footer -->
     <dimen name="footer_margin_top">20dp</dimen>
-    <dimen name="footer_size">6sp</dimen>
+    <dimen name="footer_size">7sp</dimen>
     <dimen name="emoji_heart">0x2665</dimen>
-    <!-- End of Footer -->
+    <!-- End of the footer -->
+
+    <!-- App bar -->
+    <dimen name="app_bar_elevation">0dp</dimen>
+
+    <!-- Tabs in the tabbed layout -->
+    <dimen name="tab_indicator_height">3dp</dimen>
 
 </resources>

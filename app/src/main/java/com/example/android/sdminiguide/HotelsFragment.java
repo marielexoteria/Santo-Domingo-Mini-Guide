@@ -44,26 +44,30 @@ public class HotelsFragment extends Fragment {
         ArrayList<TouristTip> hotelsList = new ArrayList<TouristTip>();
 
         //Populating the ArrayList
-        hotelsList.add(new TouristTip(R.drawable.alcazar_colon_thumbnail, R.string.hotel1_fragment,
-                R.string.hotel1_address_text, R.string.hotel1_name, R.string.hotel1_opening_hours,
-                R.drawable.map_events, R.string.hotel1_description, R.string.hotel1_phone_number,
-                R.string.hotel1_website, R.drawable.map_events, R.string.hotel1_address_for_map));
-        hotelsList.add(new TouristTip(R.drawable.alcazar_colon_thumbnail, R.string.hotel2_fragment,
-                R.string.hotel2_address_text, R.string.hotel2_name, R.string.hotel2_opening_hours,
-                R.drawable.map_events, R.string.hotel2_description, R.string.hotel2_phone_number,
-                R.string.hotel2_website, R.drawable.map_events, R.string.hotel2_address_for_map));
-        hotelsList.add(new TouristTip(R.drawable.alcazar_colon_thumbnail, R.string.hotel3_fragment,
-                R.string.hotel3_address_text, R.string.hotel3_name, R.string.hotel3_opening_hours,
-                R.drawable.map_events, R.string.hotel3_description, R.string.hotel3_phone_number,
-                R.string.hotel3_website, R.drawable.map_events, R.string.hotel3_address_for_map));
-        hotelsList.add(new TouristTip(R.drawable.alcazar_colon_thumbnail, R.string.hotel4_fragment,
-                R.string.hotel4_address_text, R.string.hotel4_name, R.string.hotel4_opening_hours,
-                R.drawable.map_events, R.string.hotel4_description, R.string.hotel4_phone_number,
-                R.string.hotel4_website, R.drawable.map_events, R.string.hotel4_address_for_map));
-        hotelsList.add(new TouristTip(R.drawable.alcazar_colon_thumbnail, R.string.hotel5_fragment,
-                R.string.hotel5_address_text, R.string.hotel5_name, R.string.hotel5_opening_hours,
-                R.drawable.map_events, R.string.hotel5_description, R.string.hotel5_phone_number,
-                R.string.hotel5_website, R.drawable.map_events, R.string.hotel5_address_for_map));
+        hotelsList.add(new TouristTip(R.drawable.hodelpa_thumbnail, R.string.hotel1_name,
+                R.string.hotel1_address_text, R.drawable.map_hotels, R.string.hotel1_description,
+                R.string.hotel1_phone_number, R.string.hotel1_opening_hours, R.string.hotel1_website,
+                R.drawable.map_restaurants, R.string.hotel1_coordinates, R.string.hotel1_address_for_map));
+
+        hotelsList.add(new TouristTip(R.drawable.naemie_thumbnail, R.string.hotel2_name,
+                R.string.hotel2_address_text, R.drawable.map_hotels, R.string.hotel2_description,
+                R.string.hotel2_phone_number, R.string.hotel2_opening_hours, R.string.hotel2_website,
+                R.drawable.map_restaurants, R.string.hotel2_coordinates, R.string.hotel2_address_for_map));
+
+        hotelsList.add(new TouristTip(R.drawable.tierra_plana_thumbnail, R.string.hotel3_name,
+                R.string.hotel3_address_text, R.drawable.map_hotels, R.string.hotel3_description,
+                R.string.hotel3_phone_number, R.string.hotel3_opening_hours, R.string.hotel3_website,
+                R.drawable.map_restaurants, R.string.hotel3_coordinates, R.string.hotel3_address_for_map));
+
+        hotelsList.add(new TouristTip(R.drawable.beaterio_thumbnail, R.string.hotel4_name,
+                R.string.hotel4_address_text, R.drawable.beaterio, R.string.hotel4_description,
+                R.string.hotel4_phone_number, R.string.hotel4_opening_hours, R.string.hotel4_website,
+                R.drawable.map_restaurants, R.string.hotel4_coordinates, R.string.hotel4_address_for_map));
+
+        hotelsList.add(new TouristTip(R.drawable.bettyes_thumbnail, R.string.hotel5_name,
+                R.string.hotel5_address_text, R.drawable.map_hotels, R.string.hotel5_description,
+                R.string.hotel5_phone_number, R.string.hotel5_opening_hours, R.string.hotel5_website,
+                R.drawable.map_restaurants, R.string.hotel5_coordinates, R.string.hotel5_address_for_map));
 
         //Creating an ArrayAdapter and a ListView to recycle the views
         TouristTipAdapter hotelsItemsAdapter = new TouristTipAdapter(getActivity(), hotelsList);
@@ -88,7 +92,7 @@ public class HotelsFragment extends Fragment {
         /*For some reason leaving these values as is, instead of using the codes for the
          * Dominican flag, works.
          */
-        String country = "DO"; //ISO code for Dominican Republic
+        String country = getString(R.string.country_iso_code); //ISO code for Dominican Republic  String country = "DO";
 
         int firstChar = Character.codePointAt(country, 0) - asciiOffset + flagOffset;
         int secondChar = Character.codePointAt(country, 1) - asciiOffset + flagOffset;

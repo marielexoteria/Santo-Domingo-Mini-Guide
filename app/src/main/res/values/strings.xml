@@ -9,27 +9,28 @@
     <string name="guide_me_button">Guide me!</string>
     <!-- End of strings used in activity_main.xml -->
 
-    <!-- Beginning of strings used in tourist_guide_list_item.xml -->
-    <string name="address_label">Address:\u0020</string>
-    <!-- End of strings used in tourist_guide_list_item.xml -->
-
-
+    <!-- Beginning of strings used in TouristTipsCategoryAdapter.java -->
     <string name="fragment_label_sights">Sights</string>
     <string name="fragment_label_eateries">Eateries</string>
     <string name="fragment_label_hotels">Hotels</string>
     <string name="fragment_label_events">Events</string>
+    <!-- End of strings used in TouristTipsCategoryAdapter.java -->
 
     <!-- Beginning of strings used in tourist_guide_list_item.xml -->
     <string name="practical_info_subtitle">Practical info</string>
     <string name="view_on_maps_button">View on Maps</string>
     <!-- End of strings used in tourist_guide_list_item.xml -->
 
-    <!-- Beginning of strings used in footer.xml -->
-
+    <!-- Beginning of strings used in the footer -->
     <string name="footer_part_1">Made with\u0020</string>
     <string name="footer_part_2">\u0020for all things\u0020</string>
+    <!-- End of strings used in the footer -->
 
-    <!-- End of strings used in footer.xml -->
+    <!-- Beginning of strings used in SightsFragment.java,
+    EateriesFragment.java, HotelsFragment.java, EventsFragment.java -->
+    <string name="country_iso_code">DO</string>
+    <!-- End of strings used in SightsFragment.java,
+    EateriesFragment.java, HotelsFragment.java, EventsFragment.java -->
 
 
 </resources>
