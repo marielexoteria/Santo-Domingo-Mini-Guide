@@ -32,52 +32,52 @@ public class EateriesFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.tourist_tips, container, false);
 
         //Setting the map of tourist_tips programmatically
-        ImageView mapOfRestaurants  = new ImageView(getActivity());
-        mapOfRestaurants.setImageResource(R.drawable.map_restaurants);
+        ImageView mapOfEateries  = new ImageView(getActivity());
+        mapOfEateries.setImageResource(R.drawable.map_eateries);
         // This is to preserve the original aspect ratio
-        mapOfRestaurants.setAdjustViewBounds(true);
+        mapOfEateries.setAdjustViewBounds(true);
 
         //Variable needed to build the footer
         TextView footer = new TextView(getActivity());
 
-        //Creating the ArrayList and using it to display content on tourist_tips.xmlps.xml
-        ArrayList<TouristTip> restaurantsList = new ArrayList<TouristTip>();
+        //Creating the ArrayList and using it to display content on tourist_tips.xml
+        ArrayList<TouristTip> eateriesList = new ArrayList<TouristTip>();
 
         //Populating the ArrayList
-        restaurantsList.add(new TouristTip(R.drawable.dluis_thumbnail, R.string.eatery1_name,
-                R.string.eatery1_address_text, R.drawable.map_hotels, R.string.eatery1_description,
+        eateriesList.add(new TouristTip(R.drawable.dluis_thumbnail, R.string.eatery1_name,
+                R.string.eatery1_address_text, R.drawable.dluis_main_photo, R.string.eatery1_description,
                 R.string.eatery1_phone_number, R.string.eatery1_opening_hours, R.string.eatery1_website,
-                R.drawable.map_restaurants, R.string.eatery1_coordinates, R.string.eatery1_address_for_map));
+                R.drawable.map_eateries, R.string.eatery1_coordinates, R.string.eatery1_address_for_map));
 
-        restaurantsList.add(new TouristTip(R.drawable.payan_thumbnail, R.string.eatery2_name,
-                R.string.eatery2_address_text, R.drawable.map_hotels, R.string.eatery2_description,
+        eateriesList.add(new TouristTip(R.drawable.payan_thumbnail, R.string.eatery2_name,
+                R.string.eatery2_address_text, R.drawable.payan_main_photo, R.string.eatery2_description,
                 R.string.eatery2_phone_number, R.string.eatery2_opening_hours, R.string.eatery2_website,
-                R.drawable.map_restaurants, R.string.eatery2_coordinates, R.string.eatery2_address_for_map));
+                R.drawable.map_eateries, R.string.eatery2_coordinates, R.string.eatery2_address_for_map));
 
-        restaurantsList.add(new TouristTip(R.drawable.meson_thumbnail, R.string.eatery3_name,
-                R.string.eatery3_address_text, R.drawable.map_hotels, R.string.eatery3_description,
+        eateriesList.add(new TouristTip(R.drawable.meson_dbari_thumbnail, R.string.eatery3_name,
+                R.string.eatery3_address_text, R.drawable.meson_dbari_main_photo, R.string.eatery3_description,
                 R.string.eatery3_phone_number, R.string.eatery3_opening_hours, R.string.eatery3_website,
-                R.drawable.map_restaurants, R.string.eatery3_coordinates, R.string.eatery3_address_for_map));
+                R.drawable.map_eateries, R.string.eatery3_coordinates, R.string.eatery3_address_for_map));
 
-        restaurantsList.add(new TouristTip(R.drawable.alcazar_thumbnail, R.string.eatery4_name,
-                R.string.eatery4_address_text, R.drawable.map_hotels, R.string.eatery4_description,
+        eateriesList.add(new TouristTip(R.drawable.cafetera_thumbnail, R.string.eatery4_name,
+                R.string.eatery4_address_text, R.drawable.cafetera_main_photo, R.string.eatery4_description,
                 R.string.eatery4_phone_number, R.string.eatery4_opening_hours, R.string.eatery4_website,
-                R.drawable.map_restaurants, R.string.eatery4_coordinates, R.string.eatery4_address_for_map));
+                R.drawable.map_eateries, R.string.eatery4_coordinates, R.string.eatery4_address_for_map));
 
-        restaurantsList.add(new TouristTip(R.drawable.patepalo_thumbnail, R.string.eatery5_name,
-                R.string.eatery5_address_text, R.drawable.map_hotels, R.string.eatery5_description,
+        eateriesList.add(new TouristTip(R.drawable.patepalo_thumbnail, R.string.eatery5_name,
+                R.string.eatery5_address_text, R.drawable.patepalo_main_photo, R.string.eatery5_description,
                 R.string.eatery5_phone_number, R.string.eatery5_opening_hours, R.string.eatery5_website,
-                R.drawable.map_restaurants, R.string.eatery5_coordinates, R.string.eatery5_address_for_map));
+                R.drawable.map_eateries, R.string.eatery5_coordinates, R.string.eatery5_address_for_map));
 
         //Creating an ArrayAdapter and a ListView to recycle the views
-        TouristTipAdapter restaurantsItemsAdapter = new TouristTipAdapter(getActivity(), restaurantsList);
-        ListView restaurantsListView = (ListView) rootView.findViewById(R.id.tourist_tips_list_view);
+        TouristTipAdapter eateriesItemsAdapter = new TouristTipAdapter(getActivity(), eateriesList);
+        ListView eateriesListView = (ListView) rootView.findViewById(R.id.tourist_tips_list_view);
 
         //Populating the ListView
-        restaurantsListView.setAdapter(restaurantsItemsAdapter);
+        eateriesListView.setAdapter(eateriesItemsAdapter);
         //Adding the map as a header
-        restaurantsListView.addHeaderView(mapOfRestaurants, null, false);
-        restaurantsListView.addFooterView(footer, null, false);
+        eateriesListView.addHeaderView(mapOfEateries, null, false);
+        eateriesListView.addFooterView(footer, null, false);
 
 
         // *** Beginning of the code that builds the Footer section ***

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for the detail screen that a user will see
+when they tap on a list item -->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tourist_guide_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/photo_height"
+            android:id="@+id/item_main_photo"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_name"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_subheading"
+            android:layout_marginLeft="@dimen/margin_horizontal_details_screen_land"
+            android:layout_marginRight="@dimen/margin_horizontal_details_screen_land"
+            android:layout_marginTop="@dimen/margin_general"
+            tools:text="Name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_description"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/margin_top_details_screen"
+            android:layout_marginLeft="@dimen/margin_horizontal_details_screen_land"
+            android:layout_marginRight="@dimen/margin_horizontal_details_screen_land"
+            tools:text="Description"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="@string/practical_info_subtitle"
+            android:layout_marginTop="@dimen/margin_between_groups_land"
+            android:layout_marginLeft="@dimen/margin_horizontal_details_screen_land"
+            android:layout_marginRight="@dimen/margin_horizontal_details_screen_land"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_top_details_screen"
+            android:layout_marginLeft="@dimen/margin_horizontal_details_screen_land"
+            android:layout_marginRight="@dimen/margin_horizontal_details_screen_land">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_address"
+                android:layout_weight="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_address"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margin_horizontal_details_screen_land"
+                android:layout_marginRight="@dimen/margin_horizontal_details_screen_land"
+                tools:text="Address"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_top_details_screen"
+            android:layout_marginLeft="@dimen/margin_horizontal_details_screen_land"
+            android:layout_marginRight="@dimen/margin_horizontal_details_screen_land">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone_number"
+                android:layout_weight="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_phone_number"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margin_left_details_screen"
+                android:autoLink="phone"
+                tools:text="Phone number"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_top_details_screen"
+            android:layout_marginLeft="@dimen/margin_horizontal_details_screen_land"
+            android:layout_marginRight="@dimen/margin_horizontal_details_screen_land">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_opening_hours"
+                android:layout_weight="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_opening_hours"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="@dimen/margin_left_details_screen"
+                tools:text="Opening hours"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_top_details_screen"
+            android:layout_marginLeft="@dimen/margin_horizontal_details_screen_land"
+            android:layout_marginRight="@dimen/margin_horizontal_details_screen_land">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_website"
+                android:layout_weight="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_website"
+                android:layout_weight="1"
+                android:autoLink="web"
+                android:layout_marginLeft="@dimen/margin_left_details_screen"
+                tools:text="Website"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/photo_height"
+            android:id="@+id/item_map_screenshot"
+            android:padding="@dimen/padding_land"
+            android:layout_marginTop="@dimen/margin_between_groups_land"
+            android:scaleType="centerCrop"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_on_maps"
+            android:background="@color/colorAccent"
+            android:padding="@dimen/padding_button"
+            android:textColor="@android:color/white"
+            android:text="@string/view_on_maps_button"
+            android:layout_marginTop="@dimen/margin_general"
+            android:layout_marginBottom="@dimen/margin_top_details_screen"
+            android:layout_marginLeft="@dimen/margin_horizontal_details_screen_land"
+            android:layout_marginRight="@dimen/margin_left_details_screen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/footer"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/margin_general"
+            android:layout_marginBottom="@dimen/margin_top_details_screen"
+            tools:text="Footer"/>
+
+    </LinearLayout>
+
+</ScrollView>

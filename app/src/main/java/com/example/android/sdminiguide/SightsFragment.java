@@ -39,34 +39,34 @@ public class SightsFragment extends Fragment {
         TextView footer = new TextView(getActivity());
 
 
-        //Creating the ArrayList and using it to display content on tourist_tips.xmlps.xml
+        //Creating the ArrayList and using it to display content on tourist_tips.xml
         ArrayList<TouristTip> sightsList = new ArrayList<TouristTip>();
 
         //Populating the ArrayList
         sightsList.add(new TouristTip(R.drawable.alcazar_thumbnail, R.string.sight1_name,
-                R.string.sight1_address_text, R.drawable.map_hotels, R.string.sight1_description,
+                R.string.sight1_address_text, R.drawable.alcazar_main_photo, R.string.sight1_description,
                 R.string.sight1_phone_number, R.string.sight1_opening_hours, R.string.sight1_website,
-                R.drawable.map_restaurants, R.string.sight1_coordinates, R.string.sight1_address_for_map));
+                R.drawable.map_eateries, R.string.sight1_coordinates, R.string.sight1_address_for_map));
 
         sightsList.add(new TouristTip(R.drawable.monasterio_thumbnail, R.string.sight2_name,
-                R.string.sight2_address_text, R.drawable.map_hotels, R.string.sight2_description,
+                R.string.sight2_address_text, R.drawable.monasterio_main_photo, R.string.sight2_description,
                 R.string.sight2_phone_number, R.string.sight2_opening_hours, R.string.sight2_website,
-                R.drawable.map_restaurants, R.string.sight2_coordinates, R.string.sight2_address_for_map));
+                R.drawable.map_eateries, R.string.sight2_coordinates, R.string.sight2_address_for_map));
 
         sightsList.add(new TouristTip(R.drawable.catedral_thumbnail, R.string.sight3_name,
-                R.string.sight3_address_text, R.drawable.map_hotels, R.string.sight3_description,
+                R.string.sight3_address_text, R.drawable.catedral_main_photo, R.string.sight3_description,
                 R.string.sight3_phone_number, R.string.sight3_opening_hours, R.string.sight3_website,
-                R.drawable.map_restaurants, R.string.sight3_coordinates, R.string.sight3_address_for_map));
+                R.drawable.map_eateries, R.string.sight3_coordinates, R.string.sight3_address_for_map));
 
-        sightsList.add(new TouristTip(R.drawable.alcazar_thumbnail, R.string.sight4_name,
-                R.string.sight4_address_text, R.drawable.map_hotels, R.string.sight4_description,
+        sightsList.add(new TouristTip(R.drawable.larimar_museum_thumbnail, R.string.sight4_name,
+                R.string.sight4_address_text, R.drawable.larimar_museum_main_photo, R.string.sight4_description,
                 R.string.sight4_phone_number, R.string.sight4_opening_hours, R.string.sight4_website,
-                R.drawable.map_restaurants, R.string.sight4_coordinates, R.string.sight4_address_for_map));
+                R.drawable.map_eateries, R.string.sight4_coordinates, R.string.sight4_address_for_map));
 
         sightsList.add(new TouristTip(R.drawable.fortaleza_thumbnail, R.string.sight5_name,
-                R.string.sight5_address_text, R.drawable.map_hotels, R.string.sight5_description,
+                R.string.sight5_address_text, R.drawable.fortaleza_main_photo, R.string.sight5_description,
                 R.string.sight5_phone_number, R.string.sight5_opening_hours, R.string.sight5_website,
-                R.drawable.map_restaurants, R.string.sight5_coordinates, R.string.sight5_address_for_map));
+                R.drawable.map_eateries, R.string.sight5_coordinates, R.string.sight5_address_for_map));
 
         //Creating an ArrayAdapter and a ListView to recycle the views
         TouristTipAdapter sightsItemsAdapter = new TouristTipAdapter(getActivity(), sightsList);

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tourist_guide_activity"
     android:layout_width="match_parent"
@@ -12,18 +13,11 @@
     un height definido me ocupa mucho espacio debido al tamaño
     de la imagen -->
 
-    <!-- si uso esta forma de decorar los tabs, el indicator
-    en styles.xml se mueve independiente del tabBackground
-    pero si quito el indicator entonces el tabBackground no cubre
-    el tab completo (se ve lo que debe ser el indicator en el
-    verde del bg color)-->
-
-
     <android.support.design.widget.TabLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
+        app:tabGravity="fill"
         style="@style/CategoryTab"/>
 
     <android.support.v4.view.ViewPager

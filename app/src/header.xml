@@ -1,6 +1,0 @@
-<ImageView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/location_map"
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/photo_height"
-    android:scaleType="fitStart"/>

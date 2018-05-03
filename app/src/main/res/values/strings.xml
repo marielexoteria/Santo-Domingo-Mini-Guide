@@ -29,8 +29,5 @@
     <!-- Beginning of strings used in SightsFragment.java,
     EateriesFragment.java, HotelsFragment.java, EventsFragment.java -->
     <string name="country_iso_code">DO</string>
-    <!-- End of strings used in SightsFragment.java,
-    EateriesFragment.java, HotelsFragment.java, EventsFragment.java -->
-
 
 </resources>

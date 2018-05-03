@@ -39,19 +39,24 @@ public class EventsFragment extends Fragment {
         //Variable needed to build the footer
         TextView footer = new TextView(getActivity());
 
-        //Creating the ArrayList and using it to display content on sights.xml
+        //Creating the ArrayList and using it to display content on tourist_tips.xml
         ArrayList<TouristTip> eventsList = new ArrayList<TouristTip>();
 
         //Populating the ArrayList
         eventsList.add(new TouristTip(R.drawable.bonye_thumbnail, R.string.event1_name,
-                R.string.event1_address_text, R.drawable.map_hotels, R.string.event1_description,
+                R.string.event1_address_text, R.drawable.bonye_main_photo, R.string.event1_description,
                 R.string.event1_phone_number, R.string.event1_opening_hours, R.string.event1_website,
-                R.drawable.map_restaurants, R.string.event1_coordinates, R.string.event1_address_for_map));
+                R.drawable.map_eateries, R.string.event1_coordinates, R.string.event1_address_for_map));
 
         eventsList.add(new TouristTip(R.drawable.casa_de_teatro_thumbnail, R.string.event2_name,
-                R.string.event2_address_text, R.drawable.map_hotels, R.string.event2_description,
+                R.string.event2_address_text, R.drawable.casa_de_teatro_main_photo, R.string.event2_description,
                 R.string.event2_phone_number, R.string.event2_opening_hours, R.string.event2_website,
-                R.drawable.map_restaurants, R.string.event2_coordinates, R.string.event2_address_for_map));
+                R.drawable.map_eateries, R.string.event2_coordinates, R.string.event2_address_for_map));
+
+        eventsList.add(new TouristTip(R.drawable.bean_to_bar_workshop_thumbnail, R.string.event3_name,
+                R.string.event3_address_text, R.drawable.bean_to_bar_main_photo, R.string.event3_description,
+                R.string.event3_phone_number, R.string.event3_opening_hours, R.string.event3_website,
+                R.drawable.map_eateries, R.string.event3_coordinates, R.string.event3_address_for_map));
 
         //Creating an ArrayAdapter and a ListView to recycle the views
         TouristTipAdapter eventsItemsAdapter = new TouristTipAdapter(getActivity(), eventsList);

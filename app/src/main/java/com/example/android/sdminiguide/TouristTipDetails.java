@@ -6,6 +6,10 @@ import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.method.LinkMovementMethod;
+import android.text.style.URLSpan;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.MenuItem;
@@ -34,7 +38,7 @@ public class TouristTipDetails extends AppCompatActivity implements View.OnClick
         //Variable needed to build the footer
         TextView footer = (TextView) findViewById(R.id.footer);
 
-        //Get the data from previous activity (selected song in the playlist) and display it
+        //Get the data from previous activity (selected tourist tip) and display it
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             TouristTip file = getIntent().getExtras().getParcelable(EXTRA_INFO);

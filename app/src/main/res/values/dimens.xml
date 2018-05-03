@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- App bar -->
+    <dimen name="app_bar_elevation">0dp</dimen>
+
+    <!-- Tabs in the tabbed layout -->
+    <dimen name="tab_indicator_height">0dp</dimen>
+
     <!-- Beginning of dimensions used in activity_main.xml -->
 
     <!-- Text size -->
@@ -32,7 +39,25 @@
     <dimen name="photo_height">195dp</dimen> <!-- also in header.xml -->
     <dimen name="margin_top_details_screen">10dp</dimen>
     <dimen name="margin_left_details_screen">16dp</dimen>
+    <!-- For ex. between description and practical info -->
+    <dimen name="margin_between_groups">20dp</dimen>
     <!-- End of dimensions used in tourist_tip_details.xml -->
+
+
+    <!-- Beginning of dimensions used in some of the layout files for landscape orientation.
+     Some dimensions from the above list are shared between files in both portrait and landscape
+      orientation.-->
+
+    <!-- tourist_guide_list_item.xml -->
+    <dimen name="padding_land">24dp</dimen>
+    <dimen name="margin_horizontal_text_land">16dp</dimen>
+
+    <!-- tourist_tip_details.xml -->
+    <dimen name="margin_between_groups_land">22dp</dimen>
+    <dimen name="margin_horizontal_details_screen_land">24dp</dimen>
+
+    <!-- End of dimensions used in some of the layout files for landscape orientation -->
+
 
     <!-- Beginning of the footer -->
     <dimen name="footer_margin_top">20dp</dimen>
@@ -40,10 +65,5 @@
     <dimen name="emoji_heart">0x2665</dimen>
     <!-- End of the footer -->
 
-    <!-- App bar -->
-    <dimen name="app_bar_elevation">0dp</dimen>
-
-    <!-- Tabs in the tabbed layout -->
-    <dimen name="tab_indicator_height">3dp</dimen>
 
 </resources>

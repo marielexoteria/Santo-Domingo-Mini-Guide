@@ -19,7 +19,7 @@ when they tap on a list item -->
             android:layout_width="match_parent"
             android:layout_height="@dimen/photo_height"
             android:id="@+id/item_main_photo"
-            android:scaleType="fitStart"/>
+            android:scaleType="centerCrop"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -30,6 +30,7 @@ when they tap on a list item -->
             android:textSize="@dimen/title_subheading"
             android:layout_marginLeft="@dimen/margin_left_details_screen"
             android:layout_marginRight="@dimen/margin_left_details_screen"
+            android:layout_marginTop="@dimen/margin_general"
             tools:text="Name"/>
 
         <TextView
@@ -37,6 +38,7 @@ when they tap on a list item -->
             android:layout_height="wrap_content"
             android:id="@+id/item_description"
             android:textColor="@android:color/black"
+            android:layout_marginTop="@dimen/margin_top_details_screen"
             android:layout_marginLeft="@dimen/margin_left_details_screen"
             android:layout_marginRight="@dimen/margin_left_details_screen"
             tools:text="Description"/>
@@ -47,7 +49,7 @@ when they tap on a list item -->
             android:textColor="@android:color/black"
             android:textStyle="bold"
             android:text="@string/practical_info_subtitle"
-            android:layout_marginTop="@dimen/margin_top_details_screen"
+            android:layout_marginTop="@dimen/margin_between_groups"
             android:layout_marginLeft="@dimen/margin_left_details_screen"
             android:layout_marginRight="@dimen/margin_left_details_screen"/>
 
@@ -121,6 +123,7 @@ when they tap on a list item -->
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/item_opening_hours"
+                android:layout_weight="1"
                 android:textColor="@android:color/black"
                 android:layout_marginLeft="@dimen/margin_left_details_screen"
                 tools:text="Opening hours"/>
@@ -145,6 +148,7 @@ when they tap on a list item -->
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/item_website"
+                android:layout_weight="1"
                 android:autoLink="web"
                 android:layout_marginLeft="@dimen/margin_left_details_screen"
                 tools:text="Website"/>
@@ -155,8 +159,9 @@ when they tap on a list item -->
             android:layout_width="match_parent"
             android:layout_height="@dimen/photo_height"
             android:id="@+id/item_map_screenshot"
-            android:layout_marginTop="@dimen/margin_top_details_screen"
-            android:scaleType="fitStart"/>
+            android:padding="@dimen/padding_general"
+            android:layout_marginTop="@dimen/margin_between_groups"
+            android:scaleType="centerCrop"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -166,6 +171,8 @@ when they tap on a list item -->
             android:padding="@dimen/padding_button"
             android:textColor="@android:color/white"
             android:text="@string/view_on_maps_button"
+            android:layout_marginTop="@dimen/margin_top_details_screen"
+            android:layout_marginBottom="@dimen/margin_top_details_screen"
             android:layout_marginLeft="@dimen/margin_left_details_screen"
             android:layout_marginRight="@dimen/margin_left_details_screen"/>
 
@@ -175,7 +182,7 @@ when they tap on a list item -->
             android:id="@+id/footer"
             android:layout_gravity="center"
             android:textColor="@android:color/black"
-            android:layout_marginTop="@dimen/margin_top_details_screen"
+            android:layout_marginTop="@dimen/margin_general"
             android:layout_marginBottom="@dimen/margin_top_details_screen"
             tools:text="Footer"/>
 

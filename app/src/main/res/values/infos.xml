@@ -179,19 +179,6 @@
     <string name="hotel4_address_for_map">El Beaterio Guest House, Calle Duarte,
         Santo+Domingo, Dominican+Republic</string>
 
-    <!-- Info related to Hotels > Bettyes -->
-    <string name="hotel5_name">Plaza Toledo Bettyes Guest House</string>
-    <string name="hotel5_address_text">Calle Isabel La Católica #163</string>
-    <string name="hotel5_opening_hours">Check-in from 3:00 pm</string>
-    <string name="hotel5_description">Backpacker style guest house in the Colonial City, only
-        one block away from the Cathedral, Plaza de España and the main shopping street.</string>
-    <string name="hotel5_phone_number">+1 829&#8211;747&#8211;2017</string>
-    <string name="hotel5_website">hostels.costasur.com</string>
-    <string name="hotel5_coordinates">0,0</string>
-    <string name="hotel5_address_for_map">Plaza Toledo Bettyes Guest House, Calle Isabel La Católica,
-        Santo+Domingo, Dominican+Republic</string>
-
-
     <!-- Info related to Events > Bonyé -->
     <string name="event1_name">Bonyé</string>
     <string name="event1_address_text">Calle Emiliano Tejera</string>
@@ -216,5 +203,30 @@
     <string name="event2_address_for_map">Casa de Teatro, Calle Santo Domingo 110, Santo+Domingo,
         Dominican+Republic</string>
 
+    <!-- Info related to Events > Bean to Bar Workshop -->
+    <string name="event3_name">Bean to Bar (Chocolate) Workshop</string>
+    <string name="event3_address_text">Calle Arzobispo Meriño #254</string>
+    <string name="event3_opening_hours">Workshop: every day 10.30 am, 1.30 pm, 4.30 pm
+        </string>
+    <string name="event3_description">Come to ChocoMuseo and make your own chocolate bars with milk or
+        dark chocolate and more than 15 different toppings. Start the workshop by learning about the
+        origin and history of chocolate and how it\'s made. In addition, you\'ll prepare and try
+        drinks like the Maya and Conquistadores used to.</string>
+    <string name="event3_phone_number">+1 809&#8211;221&#8211;8222</string>
+    <string name="event3_website">www.chocomuseo.com/santo-domingo-merino</string>
+    <string name="event3_coordinates">0,0</string>
+    <string name="event3_address_for_map">ChocoMuseo, Santo+Domingo, Dominican+Republic</string>
+
     <!-- End of info to display in the detail screen and on the fragments screens (address_text) -->
+
+
+    <!-- Info related to Facts -->
+    <string name="city_name">Santo Domingo</string>
+    <string name="city_description">Lorem ipsum</string>
+    <string name="language">Spanish</string>
+    <string name="currency">Dominican pesos (DOP)</string>
+    <string name="airport">Las Americas International Airport and La Isabela Airport</string>
+    <string name="electricity">110 V, flat 2-prong plug (American style)</string>
+    <string name="emergency_number">911</string>
+
 </resources>

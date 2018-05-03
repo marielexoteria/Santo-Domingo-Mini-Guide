@@ -57,7 +57,7 @@ public class TouristTipAdapter extends ArrayAdapter<TouristTip> {
         TextView nameListItem = (TextView) listItemView.findViewById(R.id.item_location_name_text_view);
         //Get the thumbnail from the current currentTouristTip object and
         //set this text on the name TextView
-        nameListItem.setText(activityContext.getString(R.string.numbered_place, position +1,
+        nameListItem.setText(activityContext.getString(R.string.numbered_place, position+1,
                 activityContext.getString(currentTouristTip.getName())));
 
         //Find the TextView in tourist_guide_list_item.xml
@@ -67,7 +67,7 @@ public class TouristTipAdapter extends ArrayAdapter<TouristTip> {
         addressListItem.setText(currentTouristTip.getAddress());
 
 
-        //Opening the Now Playing activity upon clicking anywhere in the grid item.
+        //Opening the Now Playing activity upon clicking anywhere in the list item.
         LinearLayout showTouristTip = listItemView.findViewById(R.id.tourist_guide_items);
         showTouristTip.setOnClickListener(new View.OnClickListener() {
             @Override
