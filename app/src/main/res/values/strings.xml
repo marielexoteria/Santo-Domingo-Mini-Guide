@@ -3,7 +3,13 @@
 
     <!-- Beginning of strings used in activity_main.xml -->
     <string name="app_title">Santo Domingo</string>
+<<<<<<< HEAD
     <string name="app_subheading1">The first city of the New World.</string>
+||||||| merged common ancestors
+    <string name="app_subheading1">The oldest city in the New World.</string>
+=======
+    <string name="app_subheading1">The first city in the New World.</string>
+>>>>>>> b4ae7b28e28e64ad3f6f318b1619af7075ebc40d
     <string name="app_subheading2">Tips from a born and raised\u0020</string>
     <string name="demonym">capitaleña.</string>
     <string name="guide_me_button">Guide me!</string>
