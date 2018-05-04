@@ -55,6 +55,7 @@
     <!-- tourist_tip_details.xml -->
     <dimen name="margin_between_groups_land">22dp</dimen>
     <dimen name="margin_horizontal_details_screen_land">24dp</dimen>
+    <dimen name="photo_height_land">250dp</dimen>
 
     <!-- End of dimensions used in some of the layout files for landscape orientation -->
 

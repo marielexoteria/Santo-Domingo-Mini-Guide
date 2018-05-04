@@ -47,22 +47,22 @@ public class HotelsFragment extends Fragment {
         hotelsList.add(new TouristTip(R.drawable.hodelpa_thumbnail, R.string.hotel1_name,
                 R.string.hotel1_address_text, R.drawable.hodelpa_main_photo, R.string.hotel1_description,
                 R.string.hotel1_phone_number, R.string.hotel1_opening_hours, R.string.hotel1_website,
-                R.drawable.map_eateries, R.string.hotel1_coordinates, R.string.hotel1_address_for_map));
+                R.drawable.map_hodelpa, R.string.hotel1_coordinates, R.string.hotel1_address_for_map));
 
         hotelsList.add(new TouristTip(R.drawable.naemie_thumbnail, R.string.hotel2_name,
                 R.string.hotel2_address_text, R.drawable.naemie_main_photo, R.string.hotel2_description,
                 R.string.hotel2_phone_number, R.string.hotel2_opening_hours, R.string.hotel2_website,
-                R.drawable.map_eateries, R.string.hotel2_coordinates, R.string.hotel2_address_for_map));
+                R.drawable.map_naemie, R.string.hotel2_coordinates, R.string.hotel2_address_for_map));
 
         hotelsList.add(new TouristTip(R.drawable.tierra_plana_thumbnail, R.string.hotel3_name,
                 R.string.hotel3_address_text, R.drawable.tierra_plana_main_photo, R.string.hotel3_description,
                 R.string.hotel3_phone_number, R.string.hotel3_opening_hours, R.string.hotel3_website,
-                R.drawable.map_eateries, R.string.hotel3_coordinates, R.string.hotel3_address_for_map));
+                R.drawable.map_tierra_plana, R.string.hotel3_coordinates, R.string.hotel3_address_for_map));
 
         hotelsList.add(new TouristTip(R.drawable.beaterio_thumbnail, R.string.hotel4_name,
                 R.string.hotel4_address_text, R.drawable.beaterio_main_photo, R.string.hotel4_description,
                 R.string.hotel4_phone_number, R.string.hotel4_opening_hours, R.string.hotel4_website,
-                R.drawable.map_eateries, R.string.hotel4_coordinates, R.string.hotel4_address_for_map));
+                R.drawable.map_beaterio, R.string.hotel4_coordinates, R.string.hotel4_address_for_map));
 
         //Creating an ArrayAdapter and a ListView to recycle the views
         TouristTipAdapter hotelsItemsAdapter = new TouristTipAdapter(getActivity(), hotelsList);

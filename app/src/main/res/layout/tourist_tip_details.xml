@@ -19,7 +19,8 @@ when they tap on a list item -->
             android:layout_width="match_parent"
             android:layout_height="@dimen/photo_height"
             android:id="@+id/item_main_photo"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/photo_content_description"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -65,7 +66,8 @@ when they tap on a list item -->
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_address"
-                android:layout_weight="0"/>
+                android:layout_weight="0"
+                android:contentDescription="@string/icon_content_description"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -91,7 +93,8 @@ when they tap on a list item -->
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_phone_number"
-                android:layout_weight="0"/>
+                android:layout_weight="0"
+                android:contentDescription="@string/icon_content_description"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -117,7 +120,8 @@ when they tap on a list item -->
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_opening_hours"
-                android:layout_weight="0"/>
+                android:layout_weight="0"
+                android:contentDescription="@string/icon_content_description"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -142,7 +146,8 @@ when they tap on a list item -->
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_website"
-                android:layout_weight="0"/>
+                android:layout_weight="0"
+                android:contentDescription="@string/icon_content_description"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -161,7 +166,8 @@ when they tap on a list item -->
             android:id="@+id/item_map_screenshot"
             android:padding="@dimen/padding_general"
             android:layout_marginTop="@dimen/margin_between_groups"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/map_content_description"/>
 
         <Button
             android:layout_width="wrap_content"

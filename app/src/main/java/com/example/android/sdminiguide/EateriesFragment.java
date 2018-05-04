@@ -47,27 +47,27 @@ public class EateriesFragment extends Fragment {
         eateriesList.add(new TouristTip(R.drawable.dluis_thumbnail, R.string.eatery1_name,
                 R.string.eatery1_address_text, R.drawable.dluis_main_photo, R.string.eatery1_description,
                 R.string.eatery1_phone_number, R.string.eatery1_opening_hours, R.string.eatery1_website,
-                R.drawable.map_eateries, R.string.eatery1_coordinates, R.string.eatery1_address_for_map));
+                R.drawable.map_dluis, R.string.eatery1_coordinates, R.string.eatery1_address_for_map));
 
         eateriesList.add(new TouristTip(R.drawable.payan_thumbnail, R.string.eatery2_name,
                 R.string.eatery2_address_text, R.drawable.payan_main_photo, R.string.eatery2_description,
                 R.string.eatery2_phone_number, R.string.eatery2_opening_hours, R.string.eatery2_website,
-                R.drawable.map_eateries, R.string.eatery2_coordinates, R.string.eatery2_address_for_map));
+                R.drawable.map_payan, R.string.eatery2_coordinates, R.string.eatery2_address_for_map));
 
         eateriesList.add(new TouristTip(R.drawable.meson_dbari_thumbnail, R.string.eatery3_name,
                 R.string.eatery3_address_text, R.drawable.meson_dbari_main_photo, R.string.eatery3_description,
                 R.string.eatery3_phone_number, R.string.eatery3_opening_hours, R.string.eatery3_website,
-                R.drawable.map_eateries, R.string.eatery3_coordinates, R.string.eatery3_address_for_map));
+                R.drawable.map_meson_dbari, R.string.eatery3_coordinates, R.string.eatery3_address_for_map));
 
         eateriesList.add(new TouristTip(R.drawable.cafetera_thumbnail, R.string.eatery4_name,
                 R.string.eatery4_address_text, R.drawable.cafetera_main_photo, R.string.eatery4_description,
                 R.string.eatery4_phone_number, R.string.eatery4_opening_hours, R.string.eatery4_website,
-                R.drawable.map_eateries, R.string.eatery4_coordinates, R.string.eatery4_address_for_map));
+                R.drawable.map_cafetera, R.string.eatery4_coordinates, R.string.eatery4_address_for_map));
 
         eateriesList.add(new TouristTip(R.drawable.patepalo_thumbnail, R.string.eatery5_name,
                 R.string.eatery5_address_text, R.drawable.patepalo_main_photo, R.string.eatery5_description,
                 R.string.eatery5_phone_number, R.string.eatery5_opening_hours, R.string.eatery5_website,
-                R.drawable.map_eateries, R.string.eatery5_coordinates, R.string.eatery5_address_for_map));
+                R.drawable.map_patepalo, R.string.eatery5_coordinates, R.string.eatery5_address_for_map));
 
         //Creating an ArrayAdapter and a ListView to recycle the views
         TouristTipAdapter eateriesItemsAdapter = new TouristTipAdapter(getActivity(), eateriesList);

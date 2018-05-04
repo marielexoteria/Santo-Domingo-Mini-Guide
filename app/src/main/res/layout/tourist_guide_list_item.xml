@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/item_address_text_view"
                 android:textColor="@android:color/black"
-                tools:text="Plaza España"/>
+                tools:text="Plaza de España"/>
 
         </LinearLayout>
 

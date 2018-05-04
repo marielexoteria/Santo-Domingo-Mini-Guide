@@ -9,10 +9,6 @@
     android:orientation="vertical"
     tools:context=".TouristGuide">
 
-    <!-- buscarle la vuelta a lo del mapa que si no le pongo
-    un height definido me ocupa mucho espacio debido al tamaño
-    de la imagen -->
-
     <android.support.design.widget.TabLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"

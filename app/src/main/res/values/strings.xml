@@ -7,6 +7,7 @@
     <string name="app_subheading2">Tips from a born and raised\u0020</string>
     <string name="demonym">capitaleña.</string>
     <string name="guide_me_button">Guide me!</string>
+    <string name="content_description">Picture of Alcázar de Colón</string>
     <!-- End of strings used in activity_main.xml -->
 
     <!-- Beginning of strings used in TouristTipsCategoryAdapter.java -->
@@ -29,5 +30,13 @@
     <!-- Beginning of strings used in SightsFragment.java,
     EateriesFragment.java, HotelsFragment.java, EventsFragment.java -->
     <string name="country_iso_code">DO</string>
+    <!-- End of strings used in SightsFragment.java,
+    EateriesFragment.java, HotelsFragment.java, EventsFragment.java -->
+
+    <!-- Beginning of strings used in tourist_tip_details.xml -->
+    <string name="photo_content_description">Main photo of tourist tip</string>
+    <string name="map_content_description">Map showing one tourist tip</string>
+    <string name="icon_content_description">Icon</string>
+    <!-- End of strings used in tourist_tip_details.xml -->
 
 </resources>
