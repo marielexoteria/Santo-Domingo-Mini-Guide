@@ -33,5 +33,18 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
+    <!-- Styles used in the practical info section of tourist_tip_details.xml
+    as per suggestion of the reviewer of the app -->
+    <style name="practical_info_style_portrait">
+        <item name="android:layout_marginTop">@dimen/margin_top_details_screen</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left_details_screen</item>
+        <item name="android:layout_marginRight">@dimen/margin_left_details_screen</item>
+    </style>
+
+    <style name="practical_info_style_landscape">
+        <item name="android:layout_marginTop">@dimen/margin_top_details_screen</item>
+        <item name="android:layout_marginLeft">@dimen/margin_horizontal_details_screen_land</item>
+        <item name="android:layout_marginRight">@dimen/margin_horizontal_details_screen_land</item>
+    </style>
 
 </resources>

@@ -58,9 +58,7 @@ when they tap on a list item -->
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="@dimen/margin_top_details_screen"
-            android:layout_marginLeft="@dimen/margin_horizontal_details_screen_land"
-            android:layout_marginRight="@dimen/margin_horizontal_details_screen_land">
+            style="@style/practical_info_style_landscape">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -75,8 +73,7 @@ when they tap on a list item -->
                 android:id="@+id/item_address"
                 android:textColor="@android:color/black"
                 android:layout_weight="1"
-                android:layout_marginLeft="@dimen/margin_horizontal_details_screen_land"
-                android:layout_marginRight="@dimen/margin_horizontal_details_screen_land"
+                android:layout_marginLeft="@dimen/margin_left_details_screen"
                 tools:text="Address"/>
 
         </LinearLayout>
@@ -85,9 +82,7 @@ when they tap on a list item -->
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="@dimen/margin_top_details_screen"
-            android:layout_marginLeft="@dimen/margin_horizontal_details_screen_land"
-            android:layout_marginRight="@dimen/margin_horizontal_details_screen_land">
+            style="@style/practical_info_style_landscape">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -103,7 +98,6 @@ when they tap on a list item -->
                 android:textColor="@android:color/black"
                 android:layout_weight="1"
                 android:layout_marginLeft="@dimen/margin_left_details_screen"
-                android:autoLink="phone"
                 tools:text="Phone number"/>
 
         </LinearLayout>
@@ -112,9 +106,7 @@ when they tap on a list item -->
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="@dimen/margin_top_details_screen"
-            android:layout_marginLeft="@dimen/margin_horizontal_details_screen_land"
-            android:layout_marginRight="@dimen/margin_horizontal_details_screen_land">
+            style="@style/practical_info_style_landscape">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -138,9 +130,7 @@ when they tap on a list item -->
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="@dimen/margin_top_details_screen"
-            android:layout_marginLeft="@dimen/margin_horizontal_details_screen_land"
-            android:layout_marginRight="@dimen/margin_horizontal_details_screen_land">
+            style="@style/practical_info_style_landscape">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -153,8 +143,8 @@ when they tap on a list item -->
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/item_website"
+                android:textColor="@color/colorAccent"
                 android:layout_weight="1"
-                android:autoLink="web"
                 android:layout_marginLeft="@dimen/margin_left_details_screen"
                 tools:text="Website"/>
 

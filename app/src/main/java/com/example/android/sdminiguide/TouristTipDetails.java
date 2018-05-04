@@ -8,8 +8,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Spannable;
 import android.text.SpannableString;
+import android.text.TextPaint;
 import android.text.method.LinkMovementMethod;
 import android.text.style.URLSpan;
+import android.text.util.Linkify;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.MenuItem;
@@ -31,7 +33,7 @@ public class TouristTipDetails extends AppCompatActivity implements View.OnClick
         //Enabling UP navigation
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        //Trying out opening G Maps with an intent - initializing button view
+        //To open Google Maps with an intent - initializing button view
         Button viewOnMaps = (Button) findViewById(R.id.view_on_maps);
         viewOnMaps.setOnClickListener(this);
 
@@ -57,12 +59,29 @@ public class TouristTipDetails extends AppCompatActivity implements View.OnClick
 
             TextView phoneNumber = (TextView)findViewById(R.id.item_phone_number);
             phoneNumber.setText(file.getPhoneNumber());
+            //Making this TextView a link without underline as long as the phone number isn't "N/A"
+            /* Getting the content of the entry "phone number" to check if it's "N/A" or a valid
+            phone number that the user can call to */
+            String phoneNumberContent = phoneNumber.getText().toString();
+            if (!phoneNumberContent.equals("N/A")) {
+                Linkify.addLinks(phoneNumber, Linkify.PHONE_NUMBERS);
+                stripUnderlines(phoneNumber);
+                //Making the link clickable after removing the underline
+                phoneNumber.setMovementMethod(LinkMovementMethod.getInstance());
+                //Change the color to the color accent
+                phoneNumber.setTextColor(getResources().getColor(R.color.colorAccent));
+            }
 
             TextView openingHours = (TextView)findViewById(R.id.item_opening_hours);
             openingHours.setText(file.getOpeningHours());
 
             TextView website = (TextView)findViewById(R.id.item_website);
             website.setText(file.getWebsite());
+            //Making this TextView a link without underline
+            Linkify.addLinks(website, Linkify.WEB_URLS);
+            stripUnderlines(website);
+            //Making the link clickable after removing the underline
+            website.setMovementMethod(LinkMovementMethod.getInstance());
 
             ImageView mainMapScreenshot = (ImageView)findViewById(R.id.item_map_screenshot);
             mainMapScreenshot.setImageResource(file.getMap());
@@ -131,4 +150,29 @@ public class TouristTipDetails extends AppCompatActivity implements View.OnClick
 
     }
 
+    //method to remove underlines from:
+    // https://stackoverflow.com/questions/4096851/remove-underline-from-links-in-textview-android
+    private void stripUnderlines(TextView textView) {
+        Spannable s = new SpannableString(textView.getText());
+        URLSpan[] spans = s.getSpans(0, s.length(), URLSpan.class);
+        for (URLSpan span: spans) {
+            int start = s.getSpanStart(span);
+            int end = s.getSpanEnd(span);
+            s.removeSpan(span);
+            span = new URLSpanNoUnderline(span.getURL());
+            s.setSpan(span, start, end, 0);
+        }
+        textView.setText(s);
+    }
+
+    // a customized version of URLSpan which doesn't enable the TextPaint's "underline" property
+    private class URLSpanNoUnderline extends URLSpan {
+        public URLSpanNoUnderline(String url) {
+            super(url);
+        }
+        @Override public void updateDrawState(TextPaint ds) {
+            super.updateDrawState(ds);
+            ds.setUnderlineText(false);
+        }
+    }
 }
